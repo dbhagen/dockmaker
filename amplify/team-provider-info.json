@@ -1,0 +1,15 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-dockmaker-master-132005-authRole",
+            "UnauthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-dockmaker-master-132005-deployment",
+            "UnauthRoleName": "amplify-dockmaker-master-132005-unauthRole",
+            "StackName": "amplify-dockmaker-master-132005",
+            "StackId": "arn:aws:cloudformation:us-east-1:782559036331:stack/amplify-dockmaker-master-132005/878acc70-4395-11ea-9562-1246411399d1",
+            "AmplifyAppId": "drhwxuqz25hy3"
+        }
+    }
+}
