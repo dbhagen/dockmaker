@@ -10,6 +10,16 @@
             "StackName": "amplify-dockmaker-master-132005",
             "StackId": "arn:aws:cloudformation:us-east-1:782559036331:stack/amplify-dockmaker-master-132005/878acc70-4395-11ea-9562-1246411399d1",
             "AmplifyAppId": "drhwxuqz25hy3"
+        },
+        "categories": {
+            "auth": {
+                "dockmaker": {
+                    "facebookAppId": "123",
+                    "googleClientId": "123",
+                    "amazonAppId": "123",
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"123\",\"client_secret\":\"123\"},{\"ProviderName\":\"Google\",\"client_id\":\"123\",\"client_secret\":\"123\"},{\"ProviderName\":\"LoginWithAmazon\",\"client_id\":\"123\",\"client_secret\":\"123\"}]"
+                }
+            }
         }
     }
 }
