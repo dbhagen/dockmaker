@@ -11,7 +11,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - [[ ! -z \"${EXPORT_KEY}\" ]] echo "$EXPORT_KEY" | gpg --batch -d --passphrase-fd 0 --yes src/aws-exports.js.gpg > src/aws-exports.js
+        - echo "$EXPORT_KEY" | gpg --batch -d --passphrase-fd 0 --yes src/aws-exports.js.gpg > src/aws-exports.js
         - head -n 4 src/aws-exports.js
         - yarn install
     build:
