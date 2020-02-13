@@ -22,7 +22,9 @@
     "serve": "npx react-scripts start",
     "build": "npx react-scripts build",
     "test": "npx react-scripts test",
-    "eject": "npx react-scripts eject"
+    "eject": "npx react-scripts eject",
+    "post-commit": "[[ ! -z \"${EXPORT_KEY}\" ]] && [ -f .commit ] && rm -f .commit src/aws-exports.js.gpg && echo $EXPORT_KEY | gpg --batch --yes --passphrase-fd 0 -c src/aws-exports.js && git add src/aws-exports.js.gpg && git commit --amend -C HEAD --no-verify",
+    "pre-commit": "touch .commit"
   },
   "eslintConfig": {
     "extends": "react-app"
