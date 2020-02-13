@@ -19,7 +19,7 @@ frontend:
         - yarn run build
         # - jekyll b
   artifacts:
-    baseDirectory: dist
+    baseDirectory: build
     files:
       - '**/*'
   cache:

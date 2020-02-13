@@ -52,29 +52,29 @@
   dependencies:
     "@aws-amplify/core" "^2.2.4"
 
-"@aws-amplify/cli@^4.13.1":
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/cli/-/cli-4.13.1.tgz#18dc263e40b5aa102659297001124070ec588f98"
-  integrity sha512-J2iH346kzrUeTYM95+cfWMP7s7ZT/byucg+wjm/TfXSlHYgPEUQr8EdpuMBXWbRVvLmMbOpgphW+QXp1j0vaLA==
+"@aws-amplify/cli@^4.13.2":
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/cli/-/cli-4.13.2.tgz#f0b4d43ee4958b8ddad9addcda02d2d2dc29f791"
+  integrity sha512-doPGKsnU6ZN9IetF6GtyNQjmZKDK6vBfcuqslNsS44yuWz+Zlkqix3+kZjfQ+K+m49CfSDQl9L5zs4OYKqC8aw==
   dependencies:
     "@types/fs-extra" "^8.0.1"
     "@types/global-prefix" "^3.0.0"
-    amplify-category-analytics "2.13.1"
-    amplify-category-api "2.13.1"
-    amplify-category-auth "2.13.1"
-    amplify-category-function "2.13.1"
-    amplify-category-hosting "2.1.9"
-    amplify-category-interactions "2.1.9"
-    amplify-category-notifications "2.13.1"
-    amplify-category-predictions "2.1.9"
-    amplify-category-storage "2.1.9"
-    amplify-category-xr "2.1.9"
-    amplify-codegen "2.13.1"
-    amplify-frontend-android "2.13.1"
-    amplify-frontend-ios "2.13.1"
-    amplify-frontend-javascript "2.13.1"
-    amplify-provider-awscloudformation "4.13.1"
-    amplify-util-mock "3.13.1"
+    amplify-category-analytics "2.13.2"
+    amplify-category-api "2.13.2"
+    amplify-category-auth "2.13.2"
+    amplify-category-function "2.13.2"
+    amplify-category-hosting "2.1.10"
+    amplify-category-interactions "2.1.10"
+    amplify-category-notifications "2.13.2"
+    amplify-category-predictions "2.1.10"
+    amplify-category-storage "2.1.10"
+    amplify-category-xr "2.1.10"
+    amplify-codegen "2.13.2"
+    amplify-frontend-android "2.13.2"
+    amplify-frontend-ios "2.13.2"
+    amplify-frontend-javascript "2.13.2"
+    amplify-provider-awscloudformation "4.13.2"
+    amplify-util-mock "3.13.2"
     chalk "^3.0.0"
     chalk-pipe "^3.0.0"
     cli-table3 "^0.5.1"
@@ -3033,12 +3033,12 @@ amazon-cognito-identity-js@^3.2.4:
     crypto-js "^3.1.9-1"
     js-cookie "^2.1.4"
 
-amplify-appsync-simulator@1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-appsync-simulator/-/amplify-appsync-simulator-1.13.1.tgz#9edfeb107055bc5e87fbe6ec2aeb5d1dc06e9a0d"
-  integrity sha512-hmS+F3mBlfqaP5fzuao4MdL2RmthRZPEYHGl0v9GkCodxKelsn60I3ww5w7AyyV5jT10ytzjfV7F1S6R1QIp4A==
+amplify-appsync-simulator@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-appsync-simulator/-/amplify-appsync-simulator-1.13.2.tgz#b18f81875c47bfd197d06a401448f815d5aa862c"
+  integrity sha512-mx13CY8KvJlhkN4KE5B+ZQWB1MK35rsgoZDhyt4BOjS9DxRzk6HFIk54mWDIHNNG+iuWLC0RFzlmPs+D+yODPA==
   dependencies:
-    amplify-velocity-template "1.1.9"
+    amplify-velocity-template "1.1.10"
     aws-sdk "^2.608.0"
     cors "^2.8.5"
     event-to-promise "^0.8.0"
@@ -3068,39 +3068,39 @@ amplify-appsync-simulator@1.13.1:
     uuid "^3.4.0"
     websocket-stream "^5.5.0"
 
-amplify-category-analytics@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-category-analytics/-/amplify-category-analytics-2.13.1.tgz#c0f64d60e772463ca0cf1ec44f5ef96e93ee2d95"
-  integrity sha512-d1cbRvoFkPXJm4AtwEUFKEBZoAt5j/oX36nK8uSe+xh65QpOSpFgMPQu+xKI0E93WKGQQNI5ryx6KdbWeQs2Sw==
+amplify-category-analytics@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-category-analytics/-/amplify-category-analytics-2.13.2.tgz#4587ad8256aaf324755b0b684a456de68259668d"
+  integrity sha512-pvaDOrowqLkvgP2RA3HALQbSligtLWepPLGjdHEydab47yq+SenpUYJp2Dt69ERNVJIppeZShNyNUeQcnUY+Jw==
   dependencies:
-    amplify-category-auth "2.13.1"
+    amplify-category-auth "2.13.2"
     fs-extra "^8.1.0"
     inquirer "^7.0.3"
     open "^7.0.0"
     uuid "^3.4.0"
 
-amplify-category-api@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-category-api/-/amplify-category-api-2.13.1.tgz#16a47ed608136973acb1e6b4977c0ac737719740"
-  integrity sha512-xEwx07x/O7x64Q6Mx6YFjWqYpyLzMo4tQDBLcB2lFExZ7Ku2xYu7o3n5ddqtriFNEkZLTPuQJhYUhA/lOoqH9A==
+amplify-category-api@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-category-api/-/amplify-category-api-2.13.2.tgz#e8a359edf3a2b9f6b012ad02a44e503f469652b2"
+  integrity sha512-LMsJA5aSfRrNomUQDsqzK7ewDc9zbw1zKpftqTHcIF3Y92UDpmt7n2AV/OOYEtHv8kOGElGhQLcs38feGVTGWA==
   dependencies:
-    amplify-category-auth "2.13.1"
-    amplify-category-function "2.13.1"
+    amplify-category-auth "2.13.2"
+    amplify-category-function "2.13.2"
     chalk "^3.0.0"
     fs-extra "^8.1.0"
     graphql "^14.5.8"
-    graphql-relational-schema-transformer "2.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-relational-schema-transformer "2.13.2"
+    graphql-transformer-core "6.13.2"
     inquirer "^7.0.3"
     merge-graphql-schemas "^1.7.6"
     open "^7.0.0"
     ora "^4.0.3"
     uuid "^3.4.0"
 
-amplify-category-auth@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-category-auth/-/amplify-category-auth-2.13.1.tgz#e9bde51e36373118efd8090de91593c341334179"
-  integrity sha512-0g3yH4Upx3sn0Ot9h84zPSzSTLlLEIYACHjn/FD7Zzwifx5uDz150Lwn+2MiVOE9IHD9WyQlgVH1Sym+87tbbw==
+amplify-category-auth@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-category-auth/-/amplify-category-auth-2.13.2.tgz#118a54ca9e72df0ec9bb8d9f62f94845688cbf0e"
+  integrity sha512-SGPn5Pl7tZ+Olq5JXw6Cjdl6ogCbpbekmhw7m8spGeNXYVb1Gvai2dZgx4jr39ILPiPgPj+bvo6l16WkoZPjcw==
   dependencies:
     aws-sdk "^2.608.0"
     chalk "^3.0.0"
@@ -3115,22 +3115,22 @@ amplify-category-auth@2.13.1:
     promise-sequential "^1.1.1"
     uuid "^3.4.0"
 
-amplify-category-function@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-category-function/-/amplify-category-function-2.13.1.tgz#42cc67c17e257fbede4fa5576acf6be5c8343f58"
-  integrity sha512-n/vXusBMRbwTf6SKFmTJUvpUfITbtvn2nFEpKFtElJ/cvuFS4rrcMavw/H9leJErostkxQNRE3X0Iqp4QoSf3Q==
+amplify-category-function@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-category-function/-/amplify-category-function-2.13.2.tgz#461c9bb476c0bf831df7dca32082038aee57a482"
+  integrity sha512-zOWX+HlARXFAV5GcQ3XmAUkhptrTyh+kv2ecQO5lbnzPIsXVxqXoXGv4TWRs3COFgdysurzMFgxpSfNPXIZWuA==
   dependencies:
-    amplify-category-storage "2.1.9"
+    amplify-category-storage "2.1.10"
     fs-extra "^8.1.0"
     inquirer "^7.0.3"
     mime-types "^2.1.26"
     promise-sequential "^1.1.1"
     uuid "^3.4.0"
 
-amplify-category-hosting@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-category-hosting/-/amplify-category-hosting-2.1.9.tgz#374e2f54264f87d55d699474ea5e3def49845ff0"
-  integrity sha512-ZwXeqXZLgLch93r9Ty2c95qiyWCqhVzRH93plijxAUgk36+DubUfj174qXwgtiNu/zQ0tZaUlAeY1EB+UKysSg==
+amplify-category-hosting@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-category-hosting/-/amplify-category-hosting-2.1.10.tgz#1a57d14ee0d42889e802db8a7defb8807bd76e05"
+  integrity sha512-a20QUpMjJp3gCSy/1ePXOiePE8i45wVGaOkNiWq+Oefcsd8nwc2MjIyivhh+4ItAwxkg1tj+mv3WGtjaiIG0yQ==
   dependencies:
     chalk "^3.0.0"
     fs-extra "^8.1.0"
@@ -3142,37 +3142,37 @@ amplify-category-hosting@2.1.9:
     ora "^4.0.3"
     promise-sequential "^1.1.1"
 
-amplify-category-interactions@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-category-interactions/-/amplify-category-interactions-2.1.9.tgz#998681d099514ba719ed853c188882f1ac8b848f"
-  integrity sha512-gX3bq3XfVpfx9Yt2SPbrUf569WMvjX1/v0TvG8tqhjrbH82CBUuq3Ci4D7z13p1kttkoXO/gbuj6lz6v7NO4XA==
+amplify-category-interactions@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-category-interactions/-/amplify-category-interactions-2.1.10.tgz#4b4fc1a7320f6d350a9112533d1a3074d4815344"
+  integrity sha512-t6K6lYGQ0tGrgUNNkx5zA/br8Kx+4r1czA2YPE6h0Gl8+csfX1MiEvvikMOveONjKlTz2MbVTmhIbbjihBm6UQ==
   dependencies:
-    amplify-category-auth "2.13.1"
+    amplify-category-auth "2.13.2"
     fs-extra "^8.1.0"
     fuzzy "^0.1.3"
     inquirer "^7.0.3"
     inquirer-autocomplete-prompt "^1.0.1"
     uuid "^3.4.0"
 
-amplify-category-notifications@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-category-notifications/-/amplify-category-notifications-2.13.1.tgz#411d0a313975065540bb6375b6f58304e88dea9a"
-  integrity sha512-3pvB5Rn8qogxMEEFT5p35ElkR9lWRaB824hm02SfQiLTEM8CQl1q4Ta560TvptOjqU1o5Q32P7z07IXCxoeL1A==
+amplify-category-notifications@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-category-notifications/-/amplify-category-notifications-2.13.2.tgz#d9565c650b2bd602a22cab3cedd44048cf0ef130"
+  integrity sha512-kf3eNhY0IMN5p4I0JVVF5t3jpzs+G2SQIS73nLwSeXbOdX4m864oZ2dDnkeN4xdYqnIVpOc0ZyxPD0NhjHlTxw==
   dependencies:
-    amplify-category-auth "2.13.1"
+    amplify-category-auth "2.13.2"
     fs-extra "^8.1.0"
     inquirer "^7.0.3"
     open "^7.0.0"
     ora "^4.0.3"
     promise-sequential "^1.1.1"
 
-amplify-category-predictions@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-category-predictions/-/amplify-category-predictions-2.1.9.tgz#9c6068697ff112c6d154ed92ab3be52d492068ec"
-  integrity sha512-0tPzqbO8s2HYeDJI4+1MPI5sKJNwgGa8GOWliN74hE0dvYU18qdT0XjwqbCoNze/3vOsTQwLg/qHxe9rXvycjQ==
+amplify-category-predictions@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-category-predictions/-/amplify-category-predictions-2.1.10.tgz#8ff61794fd935e2bc734edd9a1aa843b9a4359d5"
+  integrity sha512-TqDtSX3nLSx+1VzqKTmJS56wbBa2xw/GXZsXznRsPevS9ArRNs6xAQ1mEC8mH+asCDJ7MY3rZG4zacpoHYRaiA==
   dependencies:
-    amplify-category-auth "2.13.1"
-    amplify-provider-awscloudformation "4.13.1"
+    amplify-category-auth "2.13.2"
+    amplify-provider-awscloudformation "4.13.2"
     aws-sdk "^2.608.0"
     chalk "^3.0.0"
     chalk-pipe "^3.0.0"
@@ -3181,32 +3181,32 @@ amplify-category-predictions@2.1.9:
     open "^7.0.0"
     uuid "^3.4.0"
 
-amplify-category-storage@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-category-storage/-/amplify-category-storage-2.1.9.tgz#f950dd4502dfe5261f44cae29599a092c5506154"
-  integrity sha512-69BRjk44DpFtq9A4KMlfbQK+5l4LaK+oyeKXLNdX1aZExpXs09tIHti3Mz26cyfG/EIhsiL5PhGjzjewv4j8ag==
+amplify-category-storage@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-category-storage/-/amplify-category-storage-2.1.10.tgz#8d315d3f5ddf04807aa227cdcf50face932e5f6c"
+  integrity sha512-5Lo9tuOEnxnVfRBLAav8C5OL5pdxrFaaDKWfirFHw3Yli5IhypL/u2qFUZieKGFjKY3r06sSkoWPdI5YIQMYEw==
   dependencies:
-    amplify-category-auth "2.13.1"
+    amplify-category-auth "2.13.2"
     fs-extra "^8.1.0"
     inquirer "^7.0.3"
     lodash "^4.17.15"
     uuid "^3.4.0"
 
-amplify-category-xr@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-category-xr/-/amplify-category-xr-2.1.9.tgz#955a6a47d0dafbb4a863c3554ffe58fa6e293610"
-  integrity sha512-tpumgtEIZOXLwU3pbd/Au9YKUICPp/H6pe+7L0QKh0tMzRS6sW7UnfMqVoyWfAFkwYH+9ymUPfuzS+O8oVyWFw==
+amplify-category-xr@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-category-xr/-/amplify-category-xr-2.1.10.tgz#ff302fbbb92fca7d9939db00cac1b160ead40e32"
+  integrity sha512-BpCQb+qpaHFmyRamfjLVR16u16HpFSVcYQSrsEOZIadNJkhC5cnnr6+yPc6N12ErMjH7S35g17jHiyfjt/cUSw==
   dependencies:
-    amplify-category-auth "2.13.1"
+    amplify-category-auth "2.13.2"
     chalk "^3.0.0"
     fs-extra "^8.1.0"
     inquirer "^7.0.3"
     open "^7.0.0"
 
-amplify-codegen-appsync-model-plugin@1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-codegen-appsync-model-plugin/-/amplify-codegen-appsync-model-plugin-1.13.1.tgz#07a8e73ba5635ca1c6ddb27b85093fb8c44d078a"
-  integrity sha512-/fNa8WaJYGq0Lry5Hf9tpNIBVzOCBafwIbRqzYjstxoEGGjakiDBypIb+cR5N80fpT+2x+a4WjNEIBatXBHTBA==
+amplify-codegen-appsync-model-plugin@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-codegen-appsync-model-plugin/-/amplify-codegen-appsync-model-plugin-1.13.2.tgz#81389ed4097caeaa1f1e314fd429a5a6f92c0697"
+  integrity sha512-1IfidQ1MPcMlSCkyFa3oFZvR4ABaSccyTK6zrfQA5BYQHZN+lazDDnMCNRcKJ4kEibOo5hx+6II+42Yaw/wW6A==
   dependencies:
     "@graphql-codegen/plugin-helpers" "~1.8.1"
     "@graphql-codegen/visitor-plugin-common" "~1.8.1"
@@ -3218,15 +3218,15 @@ amplify-codegen-appsync-model-plugin@1.13.1:
     strip-indent "^3.0.0"
     ts-dedent "^1.1.0"
 
-amplify-codegen@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-codegen/-/amplify-codegen-2.13.1.tgz#cf4e334783224d71ee816615a59f9bbed095c1f2"
-  integrity sha512-MWpkHhWCHAA0tnyqatfGIbGfRHkXnE/XMM7zW54eLhvmKMqGpqGxIQaSs4AsAgl/qrpNn2l+vLLk/cHjYVyQmQ==
+amplify-codegen@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-codegen/-/amplify-codegen-2.13.2.tgz#59d0ac88da171b8fbf73dd2d0aa0afaa9ad3cc00"
+  integrity sha512-tGiFGcCHVpjcwvEK0v1tJDmHXZNQ6wSu4tCc1j53okcqtIG/nWo0z4b3vO05TmPuPeR/VcgLgWAaui3jBH2TQQ==
   dependencies:
     "@graphql-codegen/core" "^1.8.3"
-    amplify-codegen-appsync-model-plugin "1.13.1"
-    amplify-graphql-docs-generator "2.1.9"
-    amplify-graphql-types-generator "2.1.9"
+    amplify-codegen-appsync-model-plugin "1.13.2"
+    amplify-graphql-docs-generator "2.1.10"
+    amplify-graphql-types-generator "2.1.10"
     chalk "^3.0.0"
     fs-extra "^8.1.0"
     glob-all "^3.1.0"
@@ -3236,10 +3236,10 @@ amplify-codegen@2.13.1:
     ora "^4.0.3"
     slash "^3.0.0"
 
-amplify-dynamodb-simulator@1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-dynamodb-simulator/-/amplify-dynamodb-simulator-1.13.1.tgz#d1f97dc1208f2644e56b97079bad47d7edd918c6"
-  integrity sha512-3XiCGLtGZcqVlpfHvyrBwM+L5PZf/5fSi2sgdBfn/55v1Pb6pdPvCgsX3xmfq20cfgBi9NpGcgDcHXwweXV/yQ==
+amplify-dynamodb-simulator@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-dynamodb-simulator/-/amplify-dynamodb-simulator-1.13.2.tgz#827f9c60d3845e63aefddae7b45d3f11e7f7c95a"
+  integrity sha512-bHsKeN6RIFFuT2KHuU2bN9K0H0ssUZU6ecZKvJjAmliL6+NliFCg8n4GfRfVDlUqzAgsfztpfinRQAkGqM8Wqg==
   dependencies:
     aws-sdk "^2.608.0"
     detect-port "^1.3.0"
@@ -3250,37 +3250,37 @@ amplify-dynamodb-simulator@1.13.1:
     wait-port "^0.2.7"
     which "^2.0.2"
 
-amplify-frontend-android@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-frontend-android/-/amplify-frontend-android-2.13.1.tgz#d9ba44938d64cd09e33ea5b80b2d69e2fa5f9616"
-  integrity sha512-QIlhVfGx/r/xtA8+Agfo2ZlqgRNi8avoMa6PP+uzc9wf3uAmn7r1fVLCWFW3xlUDids3VkKJ7H3j9Xo9Qu/U+g==
+amplify-frontend-android@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-frontend-android/-/amplify-frontend-android-2.13.2.tgz#5631c16c7a1e808ef3f444c23a4dbf7a0eb4d3ae"
+  integrity sha512-rqcy62U2CbnYDmjfzh9/TXi9T6xVyEnufT63y33UvI43IF0KYHPhKkUg8zXKVzO4XpSKh9IvXYhFqiIe94TdGw==
   dependencies:
     fs-extra "^8.1.0"
     graphql-config "^2.2.1"
     inquirer "^7.0.3"
 
-amplify-frontend-ios@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-frontend-ios/-/amplify-frontend-ios-2.13.1.tgz#3dd2f3486ff03a3f6433ba1c79403ba97bf6b849"
-  integrity sha512-2nIXbKwoGRy/tNgS4sNsbS2WiJvyZjqaKL9g4geXMNntVSQEgd5+mRnlGxBobZXZWRegYHjhDS3NH4JjDuakug==
+amplify-frontend-ios@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-frontend-ios/-/amplify-frontend-ios-2.13.2.tgz#dc9b99f992dc489825897df82bc1c6653f31875e"
+  integrity sha512-btuqBDCw8uiM/sS8M0XIMIVNxVU7nzQs7CddcSaADyc4iFQmqo1oty5oxSctVZzXfrqpb3L0CYDytG7f1wGPiA==
   dependencies:
     fs-extra "^8.1.0"
     graphql-config "^2.2.1"
 
-amplify-frontend-javascript@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-frontend-javascript/-/amplify-frontend-javascript-2.13.1.tgz#61abdebc42a3c03d796872fb2f7e30f066fda66c"
-  integrity sha512-/DoPeehwrmbXqB7D7v8Lcj376ENjNEnucqfdxRbXU8Q/1jAxHPwdlenN32MJy8u1j6R4uIUI+BpABpQYyLm17w==
+amplify-frontend-javascript@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-frontend-javascript/-/amplify-frontend-javascript-2.13.2.tgz#c97c6e1e792b08a84a9ab6be5333c54379f2eeaf"
+  integrity sha512-VbvqN6gVTPXKWKLGuCCitCy6QF3i8dPsUDvKwIouJvxjk/RnBqaHbQCv25RBza+l29y2cV7w5HuF7KwLOHa+Zg==
   dependencies:
     chalk "^3.0.0"
     fs-extra "^8.1.0"
     graphql-config "^2.2.1"
     inquirer "^7.0.3"
 
-amplify-graphql-docs-generator@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-graphql-docs-generator/-/amplify-graphql-docs-generator-2.1.9.tgz#d31c02d375fde9f8d8d22dfa3ea6b39f752c44a5"
-  integrity sha512-JBM5SYi3yNPmKaU4h+pY1pjJF/ECisokMvu1Te50JAmb4TtrCTuYsFhT0w10LH5CizJ08zk2V6UHx65suiz0cg==
+amplify-graphql-docs-generator@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-graphql-docs-generator/-/amplify-graphql-docs-generator-2.1.10.tgz#bde44be39ce8aabe1c039ff3798d2942e30cf7c6"
+  integrity sha512-ypsGHtwNf/HKhyOE5C4e0tDGv5Ub5NN6CDO0kaVY4ssD/z27UoZhc5rrmLUKGwycfyjAUynJOd+KH8szx8BxiA==
   dependencies:
     change-case "^4.1.1"
     graphql "^14.5.8"
@@ -3288,10 +3288,10 @@ amplify-graphql-docs-generator@2.1.9:
     prettier "^1.19.1"
     yargs "^15.1.0"
 
-amplify-graphql-types-generator@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-graphql-types-generator/-/amplify-graphql-types-generator-2.1.9.tgz#619b7020175c30ef44a0481c842c4a5758556bd4"
-  integrity sha512-VNsyQtjiuJigNYHdHxDq2Rv5dXesNhwIdKvG3BWCbBqjWTB5m7p2iYr1bspz5xhGL5j/Luu9m4JDE5591ulHNA==
+amplify-graphql-types-generator@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-graphql-types-generator/-/amplify-graphql-types-generator-2.1.10.tgz#4504b6dac751400dd7fc894f66a468679cd1e730"
+  integrity sha512-WNTZcM3FUjjNaCSk6rCLTRTR9E9ftLonl+TJ5IYuBpHCUhr1waBXujmQ9wlVRC2U0hAYGUGW4rAdeWMQWN2zWA==
   dependencies:
     "@babel/generator" "7.0.0-beta.4"
     "@babel/types" "7.0.0-beta.4"
@@ -3311,14 +3311,14 @@ amplify-graphql-types-generator@2.1.9:
     source-map-support "^0.5.16"
     yargs "^15.1.0"
 
-amplify-provider-awscloudformation@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-provider-awscloudformation/-/amplify-provider-awscloudformation-4.13.1.tgz#ff06ab6e49356e9d45abb82e8b03e585a8d247d5"
-  integrity sha512-+y2gzswEZ0YYI+VLs7uVs4De+o4n2F55ybCCyWBHWylXpBzw0DHkY25vq+NcQsZmQ3gPmq5kptJXdskmIEhvmw==
+amplify-provider-awscloudformation@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-provider-awscloudformation/-/amplify-provider-awscloudformation-4.13.2.tgz#3e5308fccd57c09e0a054d795d0443fdb46d8752"
+  integrity sha512-tgyJs3XqYQVuUgLgff1x/sBSn8RACQ6VDGZKJVlIEZA9wu6CFCTIYjjbLxIm4JoVtHrAyLP9QnhORpDGmvkkMA==
   dependencies:
-    amplify-category-auth "2.13.1"
-    amplify-category-predictions "2.1.9"
-    amplify-codegen "2.13.1"
+    amplify-category-auth "2.13.2"
+    amplify-category-predictions "2.1.10"
+    amplify-codegen "2.13.2"
     archiver "^3.1.1"
     aws-sdk "^2.608.0"
     bottleneck "2.19.5"
@@ -3329,16 +3329,16 @@ amplify-provider-awscloudformation@4.13.1:
     folder-hash "^3.3.0"
     fs-extra "^8.1.0"
     graphql "^14.5.8"
-    graphql-auth-transformer "6.13.1"
-    graphql-connection-transformer "4.13.1"
-    graphql-dynamodb-transformer "6.13.1"
-    graphql-elasticsearch-transformer "4.3.1"
-    graphql-function-transformer "2.1.9"
-    graphql-http-transformer "4.13.1"
-    graphql-key-transformer "2.13.1"
-    graphql-predictions-transformer "2.1.9"
-    graphql-transformer-core "6.13.1"
-    graphql-versioned-transformer "4.13.1"
+    graphql-auth-transformer "6.13.2"
+    graphql-connection-transformer "4.13.2"
+    graphql-dynamodb-transformer "6.13.2"
+    graphql-elasticsearch-transformer "4.3.2"
+    graphql-function-transformer "2.1.10"
+    graphql-http-transformer "4.13.2"
+    graphql-key-transformer "2.13.2"
+    graphql-predictions-transformer "2.1.10"
+    graphql-transformer-core "6.13.2"
+    graphql-versioned-transformer "4.13.2"
     ini "^1.3.5"
     inquirer "^7.0.3"
     lodash "^4.17.15"
@@ -3349,10 +3349,10 @@ amplify-provider-awscloudformation@4.13.1:
     promise-sequential "^1.1.1"
     proxy-agent "^3.1.1"
 
-amplify-storage-simulator@1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-storage-simulator/-/amplify-storage-simulator-1.1.9.tgz#df1f7b7fdab1d2fa981f30fe6ddd0c2d8443a01d"
-  integrity sha512-VVaUD/4VauirWhf4H4GHAz0uGlWfT1lz2HjUYVqHRCkGMQy6USe4j5XNfwO89rNtZwVL7lKUo7skBRTw6X/M0w==
+amplify-storage-simulator@1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-storage-simulator/-/amplify-storage-simulator-1.1.10.tgz#1cf3c2e35bb8989493457f925995f179fca6bc11"
+  integrity sha512-+OvRYw48rAtAV6rR/HX0K9ov4JmurZ8lls3DZPTl3aQHLRcbH1VRrQJU3wPBiNdDix1CtdFKSETDabi4re9Lng==
   dependencies:
     body-parser "^1.19.0"
     cors "^2.8.5"
@@ -3367,24 +3367,24 @@ amplify-storage-simulator@1.1.9:
     xml "^1.0.1"
     xml-js "^1.6.11"
 
-amplify-util-mock@3.13.1:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/amplify-util-mock/-/amplify-util-mock-3.13.1.tgz#64362b53b717376bf89d2758e8dc3b99f23b4650"
-  integrity sha512-zi78PBuh+yi3tfLr1HM7MgynLG+qfjLOfd7EI2zKmmXxlwyr6YP5AetLesheLDSLTogDTICzgRwChJMFLRZnuA==
+amplify-util-mock@3.13.2:
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/amplify-util-mock/-/amplify-util-mock-3.13.2.tgz#aea97ebd18303569c578ecd7b303497521b1c592"
+  integrity sha512-LfgzLOInrCNFtz48SVwLFUnwWUIb7GrhyII144zGGiudj2w55sd1VZQlZY4wqFjQ+43v18r5Um/fLD3EF5732Q==
   dependencies:
-    amplify-appsync-simulator "1.13.1"
-    amplify-category-function "2.13.1"
-    amplify-codegen "2.13.1"
-    amplify-dynamodb-simulator "1.13.1"
-    amplify-storage-simulator "1.1.9"
+    amplify-appsync-simulator "1.13.2"
+    amplify-category-function "2.13.2"
+    amplify-codegen "2.13.2"
+    amplify-dynamodb-simulator "1.13.2"
+    amplify-storage-simulator "1.1.10"
     chokidar "^3.3.1"
     fs-extra "^8.1.0"
     lodash "^4.17.15"
 
-amplify-velocity-template@1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/amplify-velocity-template/-/amplify-velocity-template-1.1.9.tgz#78537df4fb3931935e9ad8fe2b43fef9bf16dee8"
-  integrity sha512-vhRJ0Wy/g59yUzn7u1fNgmx63/hi8sIomChX154kq+Akq89XNw2XBmviHQNZzosggC+kqzhh9B0Dbe7oNsPzCQ==
+amplify-velocity-template@1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/amplify-velocity-template/-/amplify-velocity-template-1.1.10.tgz#06df4d14f1a1c9729f1391f493005a448de50d0e"
+  integrity sha512-LKEzI1kfH4HkZ2Fv8XVeEKejzqJIZfe8PXyzI9kaw0zC408faj6EmvmxjGw27zCLkOOLiP+yDHZY8mnekBQHYg==
   dependencies:
     lodash "^4.17.15"
 
@@ -3667,7 +3667,7 @@ array.prototype.flat@^1.2.1:
     define-properties "^1.1.3"
     es-abstract "^1.17.0-next.1"
 
-arrify@^1.0.1:
+arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
@@ -4727,6 +4727,11 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
+ci-info@^1.5.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
+  integrity sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==
+
 ci-info@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
@@ -4864,6 +4869,16 @@ cloudform-types@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cloudform-types/-/cloudform-types-4.1.0.tgz#7cae631f8057edb0553f3db9200cc49a6ded4386"
   integrity sha512-ieyR3+ns3TTdmfv5+1xMu7HBXlgzKfFvQV/yBWMIQXuXZvXRQkuzLVxtVailmlNcso1C8LnvMm7YaXtsw3EooQ==
+
+cloudform@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cloudform/-/cloudform-4.1.0.tgz#736f58f0fab05c36a55862d47c4ef55910311c4e"
+  integrity sha512-15fOTFpRIK0GXrQewstA5Dk8nJ2IStmW9aj/UVIqnhIzoH2BuxU7oNGrONpJXLE/Qs+CPRRA3/oC23jYZz7Peg==
+  dependencies:
+    cloudform-types "^4.1.0"
+    jsonminify "^0.4.1"
+    ts-node "^5.0.1"
+    typescript "^2.9.2"
 
 co@^4.6.0:
   version "4.6.0"
@@ -5834,6 +5849,11 @@ diff-sequences@^25.1.0:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-25.1.0.tgz#fd29a46f1c913fd66c22645dc75bffbe43051f32"
   integrity sha512-nFIfVk5B/NStCsJ+zaPO4vYuLjlzQ6uFvPxzYyHlejNZ/UGa7G/n7peOXVrVNvRuyfstt+mZQYGpjxg9Z6N8Kw==
 
+diff@^3.1.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+  integrity sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -6529,6 +6549,19 @@ execa@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-0.7.0.tgz#944becd34cc41ee32a63a9faf27ad5a65fc59777"
   integrity sha1-lEvs00zEHuMqY6n68nrVpl/Fl3c=
+  dependencies:
+    cross-spawn "^5.0.1"
+    get-stream "^3.0.0"
+    is-stream "^1.1.0"
+    npm-run-path "^2.0.0"
+    p-finally "^1.0.0"
+    signal-exit "^3.0.0"
+    strip-eof "^1.0.0"
+
+execa@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-0.8.0.tgz#d8d76bbc1b55217ed190fd6dd49d3c774ecfc8da"
+  integrity sha1-2NdrvBtVIX7RkP1t1J08d07PyNo=
   dependencies:
     cross-spawn "^5.0.1"
     get-stream "^3.0.0"
@@ -7451,16 +7484,16 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
-graphql-auth-transformer@6.13.1:
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-auth-transformer/-/graphql-auth-transformer-6.13.1.tgz#d6cb974002b35e9738c5845c3c58684fcec21c1d"
-  integrity sha512-TcQ3cqtuL8MPhfFwxnuEGLI4dPusaePrQJKK2Rw/3uw5aA5rj222lxTxmPBGFUutrYxKs8DiaG+64DAUhYCMFA==
+graphql-auth-transformer@6.13.2:
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-auth-transformer/-/graphql-auth-transformer-6.13.2.tgz#ce4d585ab418ffe5dc5b446f3257724208253921"
+  integrity sha512-OndU6rJh5supRSfo0FM6LQWJ2oWXnotUnx5nylUDW+PTLj4CIYFmEXTH/8C4FWj76Nm2DqJpUiyeNS4AKMlF0A==
   dependencies:
     graphql "^14.5.8"
-    graphql-connection-transformer "4.13.1"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-connection-transformer "4.13.2"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
 graphql-config@^2.2.1:
   version "2.2.1"
@@ -7473,64 +7506,64 @@ graphql-config@^2.2.1:
     lodash "^4.17.4"
     minimatch "^3.0.4"
 
-graphql-connection-transformer@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-connection-transformer/-/graphql-connection-transformer-4.13.1.tgz#8c674638a59c29db5e4d5fa3213bdc48140bcc47"
-  integrity sha512-xg9Dov9/cGG89/qMex8ZWI6lCyAyH4uUJr1JfwJVQwr6YVsNBLz7W+x30/6gCU17+cFqM6T9BuuIyWOq52bIkw==
+graphql-connection-transformer@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-connection-transformer/-/graphql-connection-transformer-4.13.2.tgz#413ba3b73ae7244183db12bb22b4e8f309957300"
+  integrity sha512-Rpyx4OFnHtkABUasYD7VQylO8xwxsR6qxXd65LoDDeTorLzCNBVA2dHOMb8L8aNWiBVaxra1qje6RmA0Wq8j+w==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-dynamodb-transformer "6.13.1"
-    graphql-key-transformer "2.13.1"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-dynamodb-transformer "6.13.2"
+    graphql-key-transformer "2.13.2"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
-graphql-dynamodb-transformer@6.13.1:
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-dynamodb-transformer/-/graphql-dynamodb-transformer-6.13.1.tgz#1cb211809fe21d2d111ccd9675261a865182667a"
-  integrity sha512-hXXUVBxtsNDfaGEKdgav/ERDYtTZKaaFixTT8rXxVkCZXFPBK2w2zYCShG4sOYJ7eNdvgjm0RE2diWACkAFxhg==
+graphql-dynamodb-transformer@6.13.2:
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-dynamodb-transformer/-/graphql-dynamodb-transformer-6.13.2.tgz#5ccafd5f76d2d8720eaa95270698f10e93ce3f79"
+  integrity sha512-E9INMFi+WBVuIdOVUXGWycmTbHu76BrqkBvboMIP+8NU5wxwEI1RytUFD7lE7KBd718Te5l7CRKWcfsjk+WIjw==
   dependencies:
     "@types/pluralize" "^0.0.29"
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
     pluralize "^8.0.0"
 
-graphql-elasticsearch-transformer@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/graphql-elasticsearch-transformer/-/graphql-elasticsearch-transformer-4.3.1.tgz#51d1fbacb9c11af9340421ed2807fe7d506d3711"
-  integrity sha512-J7t2jCMTpbq+PlgRT/2okZM8Gcav/yVcBtCtD4sxJeaMHfvwI3L/lDJAE+PZnzwhsBj3AAYvux4zfmPtYqqkog==
+graphql-elasticsearch-transformer@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/graphql-elasticsearch-transformer/-/graphql-elasticsearch-transformer-4.3.2.tgz#5542b75a113dfe7dc2e50c9f3a3245648ef8edc5"
+  integrity sha512-bhQH0x9Xh3J6LS5cOSa6ZOL3dNL/abeWs0oOxPTrDRP1j+PP2nTf7+55fHFqy9jk0q7YDMDR0i2hSNxxBpB9VQ==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
-graphql-function-transformer@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/graphql-function-transformer/-/graphql-function-transformer-2.1.9.tgz#20f57ba14485d89b686f95f6f15052cff5584739"
-  integrity sha512-6zpK2zFDokvLe+T708134K3VTJkM9mY28NYvwT3CiotauoZlDu4HEPocb7gnAfuSq8iwhFRBQeOx6XEZZLQM3g==
+graphql-function-transformer@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/graphql-function-transformer/-/graphql-function-transformer-2.1.10.tgz#1d6b28f10b9bc93f71728723aba61c9735156812"
+  integrity sha512-1gEIBuOFHm/s5A5JwWwiOdFHoqZe7YicZHNxtxKxIkt5Fnn46IGh7SGiMLxnhF4Arxz2LIf6bEbKh+meytRMdw==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
-graphql-http-transformer@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-http-transformer/-/graphql-http-transformer-4.13.1.tgz#9ead80975d69e9d8c4c269df90e90f9c9c486c61"
-  integrity sha512-KoDau68o/AC9DLtvT7SvntnictIY5m9hiKhcxQGM1DpDSMRIsyoimXopUV6wh27zeGxS450sK4CKJT95+8TDyw==
+graphql-http-transformer@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-http-transformer/-/graphql-http-transformer-4.13.2.tgz#3aa3e84f4e20b89da25de122b3e8614d9809e170"
+  integrity sha512-PoP/LEEcn2k9EO8tqGXvATQVXJCOuDr58vzdDHJXIqzpGumZmA8MlnQeYuPAca8ylfcFh5ixjtCbukw81Yi/2Q==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
 graphql-import@0.7.1, graphql-import@^0.7.1:
   version "0.7.1"
@@ -7545,44 +7578,45 @@ graphql-iso-date@^3.6.1:
   resolved "https://registry.yarnpkg.com/graphql-iso-date/-/graphql-iso-date-3.6.1.tgz#bd2d0dc886e0f954cbbbc496bbf1d480b57ffa96"
   integrity sha512-AwFGIuYMJQXOEAgRlJlFL4H1ncFM8n8XmoVDTNypNOZyQ8LFDG2ppMFlsS862BSTCDcSUfHp8PD3/uJhv7t59Q==
 
-graphql-key-transformer@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-key-transformer/-/graphql-key-transformer-2.13.1.tgz#b9071ed55e42c9467962afa11469d2838a8ce8d9"
-  integrity sha512-k3rxuEeSm2murBxvHMyoGwWyqad/IeaG4gS0Ff0PEWnEN4EU24W3QvZCtV1RUYSAjSz/06Ma/BLmE9NLeOS6zg==
+graphql-key-transformer@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-key-transformer/-/graphql-key-transformer-2.13.2.tgz#d084baa35f3d39ff4f1cacb404a6a79539a10f11"
+  integrity sha512-AGvuy2RHWIky6wKRs6ptpw8pYwcRr6JAUTCrWMok9mTLEH+JKG5Klo0gnoPKrpDhND802GczWXDTXZ1A4yBH5Q==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-dynamodb-transformer "6.13.1"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-dynamodb-transformer "6.13.2"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
-graphql-mapping-template@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-mapping-template/-/graphql-mapping-template-4.13.1.tgz#338176ad42b0f7c9d67e0b7acd79172c4a34ed93"
-  integrity sha512-V2q2qV4egFMhRZhGQdzalEZlki/uCtGLTANOd6fpqw+StqTco8PmwXQkaSLt14ZGB2sKfFWOPvSmlpLz60A6dg==
+graphql-mapping-template@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-mapping-template/-/graphql-mapping-template-4.13.2.tgz#bce1b5ba165df304b024f48b7530f96efe71f0bf"
+  integrity sha512-a3RBKFNSUwFXqLxI1Vb/yjAt47XD4NfaXceFPwj2GyJD6JPOd60hyoAHmJlnF3F+4wzV5DsdJsP7ZXbTpOdDlA==
 
-graphql-predictions-transformer@2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/graphql-predictions-transformer/-/graphql-predictions-transformer-2.1.9.tgz#95a0861f5e507a56cc85d971495084d85560715e"
-  integrity sha512-z+s5pxOmJJILHaH+ld4m4EN6D/60a7DMcbEVq1J4qtpbllgY3uvZoLKJg59MqQkRZSlQNBl7pntD+Mnj7r8WoQ==
+graphql-predictions-transformer@2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/graphql-predictions-transformer/-/graphql-predictions-transformer-2.1.10.tgz#79d5793ecfb02e55bc739c0f7f4f857d40776c4f"
+  integrity sha512-G9bDbLNi/Rn2IkfvOveJ0TpfIoqL6YG9lpFjAhbrDscv8kTJtXQzUQkt9QvbLMuRtU//ySHUpZO4fxS9dNYLLg==
   dependencies:
     cloudform-types "^4.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
-graphql-relational-schema-transformer@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-relational-schema-transformer/-/graphql-relational-schema-transformer-2.13.1.tgz#e7ba3d5e2c90168943577038b8ef67599353b467"
-  integrity sha512-7STa3QiJFz1017tI+YIaDOJJIHL3iaVSZdVRgDqLFHEpi+mEhSGXyHGBJaAmTJPQRAs5E74f+L2Qc8acOB0UuA==
+graphql-relational-schema-transformer@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-relational-schema-transformer/-/graphql-relational-schema-transformer-2.13.2.tgz#0a38c478011260ef53b8ba3a4146677db5cca17a"
+  integrity sha512-9kr8IuKmfWbKQZSzPpBsrbpTPcQ4FYzMCjAbbV7edh0qDGZ2YugdwsDItEkiK6viOWXz6l0n+r3B/QdA94xBiQ==
   dependencies:
+    cloudform "^4.1.0"
     cloudform-types "^4.1.0"
     fs-extra "^8.1.0"
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
 
 graphql-request@^1.5.0:
   version "1.8.2"
@@ -7635,40 +7669,40 @@ graphql-tools@^4.0.6:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-graphql-transformer-common@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-transformer-common/-/graphql-transformer-common-4.13.1.tgz#8adbb21fa13a1ffcd15d830c572e607707d476e0"
-  integrity sha512-4uiVTcebIDkadR239LYQmdzJefrnOdLhFGaHt1KKz7MWe9/RIp93IqEkvNjkbxQnfRwgd4ZchgWkVGv1hd9x0g==
+graphql-transformer-common@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-transformer-common/-/graphql-transformer-common-4.13.2.tgz#6be78de8d7d3d6072ad007f7d0d05fbd2c2b2e6a"
+  integrity sha512-6Wz3dF4Yg6DXgBVB+hUru6mpxQ4sLkyBQiUNA/wvIPuE14YDkeWFOkT3iy4HEtNyEyqO3dcOAs+l6B2VxD2zXw==
   dependencies:
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
+    graphql-mapping-template "4.13.2"
     md5 "^2.2.1"
 
-graphql-transformer-core@6.13.1:
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-transformer-core/-/graphql-transformer-core-6.13.1.tgz#083203889192ada1bdbe399cc92e10fd70f3307d"
-  integrity sha512-zkdQ0ZtDn2jE72UHak6o2+FOaIR5csYz+UHc2nzjNtSUkIA58mWGEhXkkpEA4jt+jliQ2Menb6VdRyDijGW+Eg==
+graphql-transformer-core@6.13.2:
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-transformer-core/-/graphql-transformer-core-6.13.2.tgz#335694814e13c6f5a2a17ec03803413ac15369d0"
+  integrity sha512-DwYZVBAFGGF6T0mP6hpmtQ8zyuWDurOvVG3zrNUWyHS9Dr9lC6Uo3pQS+Wzu1Ak6iOItjcCQeUWq+JpdRepFCg==
   dependencies:
     cloudform-types "^4.1.0"
     deep-diff "^1.0.2"
     fs-extra "^8.1.0"
     graphql "^14.5.8"
-    graphql-transformer-common "4.13.1"
+    graphql-transformer-common "4.13.2"
 
 graphql-type-json@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.3.1.tgz#47fca2b1fa7adc0758d165b33580d7be7a6cf548"
   integrity sha512-1lPkUXQ2L8o+ERLzVAuc3rzc/E6pGF+6HnjihCVTK0VzR0jCuUd92FqNxoHdfILXqOn2L6b4y47TBxiPyieUVA==
 
-graphql-versioned-transformer@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-versioned-transformer/-/graphql-versioned-transformer-4.13.1.tgz#ae8dc9d8df20d5f779876af025edd0ef33c77dee"
-  integrity sha512-UP4pL2N8uv2bCIWgHrx6xTiBYAy3zbgJkFLop76C/3P7zfP+WLKjJutOqA98IRbYtB1pN0uTAwcaqjOrRqcADA==
+graphql-versioned-transformer@4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/graphql-versioned-transformer/-/graphql-versioned-transformer-4.13.2.tgz#67810c05931b209e913b051127762a2452bf566c"
+  integrity sha512-xJ/eunp9FeFu8XeU3pZwKqozNyn5pp+FkiounE2IYu5KRJbZo/+QFjCzFEjhe7v7UsZYD8h33dqxZziXNQ/7fw==
   dependencies:
     graphql "^14.5.8"
-    graphql-mapping-template "4.13.1"
-    graphql-transformer-common "4.13.1"
-    graphql-transformer-core "6.13.1"
+    graphql-mapping-template "4.13.2"
+    graphql-transformer-common "4.13.2"
+    graphql-transformer-core "6.13.2"
 
 graphql@14.0.0:
   version "14.0.0"
@@ -8389,6 +8423,13 @@ is-callable@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.5.tgz#f7e46b596890456db74e7f6e976cb3273d06faab"
   integrity sha512-ESKv5sMCJB2jnHTWZ3O5itG+O128Hsus4K4Qh1h2/cgn2vbgnLSVqfV46AeJA9D5EeeLa9w81KUXMtn34zhX+Q==
+
+is-ci@^1.0.10:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-1.2.1.tgz#e3779c8ee17fccf428488f6e281187f2e632841c"
+  integrity sha512-s6tfsaQaQi3JNciBH6shVqEDvhGut0SUXr31ag8Pd8BBbVVlcGfWhpPmEOoM6RJ5TFhbypvf5yyRw/VXW1IiWg==
+  dependencies:
+    ci-info "^1.5.0"
 
 is-ci@^2.0.0:
   version "2.0.0"
@@ -9399,6 +9440,11 @@ jsonify@~0.0.0:
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
+jsonminify@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/jsonminify/-/jsonminify-0.4.1.tgz#805dafbb39395188cee9ab582c81ef959d7e710c"
+  integrity sha1-gF2vuzk5UYjO6atYLIHvlZ1+cQw=
+
 jsprim@^1.2.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.1.tgz#313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2"
@@ -9761,6 +9807,11 @@ make-dir@^3.0.0:
   integrity sha512-grNJDhb8b1Jm1qeqW5R/O63wUo4UXo2v2HMic6YT9i/HBlF93S8jkMgH7yugvY9ABDShH4VZMn8I+U8+fCNegw==
   dependencies:
     semver "^6.0.0"
+
+make-error@^1.1.1:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.5.tgz#efe4e81f6db28cadd605c70f29c831b58ef776c8"
+  integrity sha512-c3sIjNUow0+8swNwVpqoH4YCShKNFkMaw6oH1mNS2haDZQqkeZFlHS3dhoeEbKKmJB4vXpJucU6oH75aDYeE9g==
 
 make-iterator@^0.1.1:
   version "0.1.1"
@@ -10454,6 +10505,11 @@ normalize-package-data@^2.3.2:
     resolve "^1.10.0"
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
+
+normalize-path@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-1.0.0.tgz#32d0e472f91ff345701c15a8311018d3b0a90379"
+  integrity sha1-MtDkcvkf80VwHBWoMRAY07CpA3k=
 
 normalize-path@^2.0.1, normalize-path@^2.1.1:
   version "2.1.1"
@@ -13537,7 +13593,7 @@ source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.0, source-map-support@^0.5.16, source-map-support@^0.5.6, source-map-support@~0.5.12:
+source-map-support@^0.5.0, source-map-support@^0.5.16, source-map-support@^0.5.3, source-map-support@^0.5.6, source-map-support@~0.5.12:
   version "0.5.16"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
   integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
@@ -13893,6 +13949,11 @@ strip-final-newline@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
+
+strip-indent@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
+  integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
 
 strip-indent@^3.0.0:
   version "3.0.0"
@@ -14255,6 +14316,20 @@ ts-invariant@^0.4.0:
   dependencies:
     tslib "^1.9.3"
 
+ts-node@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-5.0.1.tgz#78e5d1cb3f704de1b641e43b76be2d4094f06f81"
+  integrity sha512-XK7QmDcNHVmZkVtkiwNDWiERRHPyU8nBqZB1+iv2UhOG0q3RQ9HsZ2CMqISlFbxjrYFGfG2mX7bW4dAyxBVzUw==
+  dependencies:
+    arrify "^1.0.0"
+    chalk "^2.3.0"
+    diff "^3.1.0"
+    make-error "^1.1.1"
+    minimist "^1.2.0"
+    mkdirp "^0.5.1"
+    source-map-support "^0.5.3"
+    yn "^2.0.0"
+
 ts-pnp@1.1.5, ts-pnp@^1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.5.tgz#840e0739c89fce5f3abd9037bb091dbff16d9dec"
@@ -14323,6 +14398,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"
@@ -15341,6 +15421,21 @@ yauzl@2.4.1:
   integrity sha1-lSj0QtqxsihOWLQ3m7GU4i4MQAU=
   dependencies:
     fd-slicer "~1.0.1"
+
+yn@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
+  integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
+
+yorkie@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/yorkie/-/yorkie-2.0.0.tgz#92411912d435214e12c51c2ae1093e54b6bb83d9"
+  integrity sha512-jcKpkthap6x63MB4TxwCyuIGkV0oYP/YRyuQU5UO0Yz/E/ZAu+653/uov+phdmO54n6BcvFRyyt0RRrWdN2mpw==
+  dependencies:
+    execa "^0.8.0"
+    is-ci "^1.0.10"
+    normalize-path "^1.0.0"
+    strip-indent "^2.0.0"
 
 zen-observable-ts@^0.8.20:
   version "0.8.20"
