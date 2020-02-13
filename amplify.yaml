@@ -11,12 +11,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        # - echo -e "\n[profile amplifyrole]\nrole_arn = arn:aws:iam::782559036331:role/AmplifyConsoleServiceRole-AmplifyRole\nsource_profile = default" >> ~/.aws/config
-        # - cat ~/.aws/config
-        # - cat ~/.aws/credentials
-        # - set AWS_ACCESS_KEY_ID=$ACCESS_KEY_ID
-        # - set AWS_SECRET_ACCESS_KEY=$SECRET_ACCESS_KEY
-        - timeout 60 /bin/bash headless_pull.sh --appid $AWS_APP_ID --envName $AWS_BRANCH --useProfile --profileName default
+        - [[ ! -z \"${EXPORT_KEY}\" ]] echo "$EXPORT_KEY" | gpg --batch -d --passphrase-fd 0 --yes src/aws-exports.js.gpg > src/aws-exports.js
         - head -n 4 src/aws-exports.js
         - yarn install
     build:
