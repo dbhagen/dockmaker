@@ -1,60 +1,140 @@
 {
-  "identityPoolName": "dockermaker",
-  "allowUnauthenticatedIdentities": true,
-  "resourceNameTruncated": "dockma79995d6b",
-  "userPoolName": "dockmaker",
-  "autoVerifiedAttributes": ["email"],
-  "mfaConfiguration": "OPTIONAL",
-  "mfaTypes": ["SMS Text Message", "TOTP"],
-  "smsAuthenticationMessage": "Your authentication code is {####}",
-  "smsVerificationMessage": "Your verification code is {####}",
-  "emailVerificationSubject": "Your verification code",
-  "emailVerificationMessage": "Your verification code is {####}",
-  "defaultPasswordPolicy": true,
-  "passwordPolicyMinLength": 8,
-  "passwordPolicyCharacters": [
-    "Requires Lowercase",
-    "Requires Uppercase",
-    "Requires Numbers",
-    "Requires Symbols"
-  ],
-  "requiredAttributes": ["email", "name"],
-  "userpoolClientGenerateSecret": true,
-  "userpoolClientRefreshTokenValidity": 30,
-  "userpoolClientWriteAttributes": ["email", "name"],
-  "userpoolClientReadAttributes": ["email", "name"],
-  "userpoolClientLambdaRole": "dockma79995d6b_userpoolclient_lambda_role",
-  "userpoolClientSetAttributes": true,
-  "useDefault": "manual",
-  "authSelections": "identityPoolAndUserPool",
-  "resourceName": "dockmaker",
-  "thirdPartyAuth": true,
-  "authProviders": [
-    "graph.facebook.com",
-    "accounts.google.com",
-    "www.amazon.com",
-    "GitHub.com"
-  ],
-  "usernameAttributes": ["email"],
-  "userPoolGroups": true,
-  "adminQueries": true,
-  "triggers": "{}",
-  "hostedUI": true,
-  "hostedUIDomainName": "auth",
-  "authProvidersUserPool": ["Facebook", "Google", "LoginWithAmazon"],
-  "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"sub\"}},{\"ProviderName\":\"LoginWithAmazon\",\"authorize_scopes\":\"profile profile:user_id\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"user_id\"}}]",
-  "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://auth.dockmaker.io/\",\"https://auth.dev.dockmaker.io/\",\"https://auth.testing.dockmaker.io/\"],\"LogoutURLs\":[\"https://auth.dockmaker.io/\",\"https://auth.dev.dockmaker.io/\",\"https://auth.testing.dockmaker.io/\"]}",
-  "userPoolGroupList": ["users"],
-  "adminQueryGroup": "superusers",
-  "authRoleArn": {
-    "Fn::GetAtt": ["AuthRole", "Arn"]
-  },
-  "unauthRoleArn": {
-    "Fn::GetAtt": ["UnauthRole", "Arn"]
-  },
-  "parentStack": {
-    "Ref": "AWS::StackId"
-  },
-  "permissions": [],
-  "dependsOn": []
+    "identityPoolName": "dockermaker",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "dockma79995d6b",
+    "userPoolName": "dockmaker",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OPTIONAL",
+    "mfaTypes": [
+        "SMS Text Message",
+        "TOTP"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email",
+        "name"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "address",
+        "birthdate",
+        "family_name",
+        "middle_name",
+        "gender",
+        "locale",
+        "given_name",
+        "nickname",
+        "phone_number",
+        "preferred_username",
+        "picture",
+        "profile",
+        "updated_at",
+        "website",
+        "zoneinfo",
+        "email",
+        "name"
+    ],
+    "userpoolClientReadAttributes": [
+        "address",
+        "birthdate",
+        "email",
+        "family_name",
+        "middle_name",
+        "gender",
+        "locale",
+        "given_name",
+        "name",
+        "nickname",
+        "phone_number",
+        "preferred_username",
+        "picture",
+        "profile",
+        "updated_at",
+        "website",
+        "zoneinfo",
+        "email_verified",
+        "phone_number_verified"
+    ],
+    "userpoolClientLambdaRole": "dockma79995d6b_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "dockmaker",
+    "thirdPartyAuth": true,
+    "authProviders": [
+        "graph.facebook.com",
+        "accounts.google.com",
+        "www.amazon.com"
+    ],
+    "usernameAttributes": [
+        "email"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": true,
+    "triggers": "{\"PostAuthentication\":[\"custom\"],\"PostConfirmation\":[\"add-to-group\",\"custom\"]}",
+    "hostedUI": true,
+    "hostedUIDomainName": "auth",
+    "authProvidersUserPool": [
+        "Facebook",
+        "Google",
+        "LoginWithAmazon"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"sub\"}},{\"ProviderName\":\"LoginWithAmazon\",\"authorize_scopes\":\"profile profile:user_id\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"username\":\"user_id\"}}]",
+    "userPoolGroupList": [
+        "users"
+    ],
+    "adminQueryGroup": "superusers",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [
+        "{\"policyName\":\"AddToGroupCognito\",\"trigger\":\"PostConfirmation\",\"effect\":\"Allow\",\"actions\":[\"cognito-idp:AdminAddUserToGroup\",\"cognito-idp:GetGroup\",\"cognito-idp:CreateGroup\"],\"resource\":{\"paramType\":\"!GetAtt\",\"keys\":[\"UserPool\",\"Arn\"]}}"
+    ],
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "dockmakerPostAuthentication",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "dockmakerPostConfirmation",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        }
+    ],
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://auth.dockmaker.io/\",\"https://auth.dev.dockmaker.io/\",\"https://auth.testing.dockmaker.io/\",\"https://dockmaker.io/auth/\",\"https://localhost:3000/auth/\"],\"LogoutURLs\":[\"https://auth.dockmaker.io/\",\"https://auth.dev.dockmaker.io/\",\"https://auth.testing.dockmaker.io/\",\"https://dockmaker.io/auth/signout/\",\"https://localhost:3000/auth/signout/\"]}"
 }

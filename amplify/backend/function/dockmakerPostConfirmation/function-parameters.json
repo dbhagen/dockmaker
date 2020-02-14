@@ -1,0 +1,15 @@
+{
+    "trigger": true,
+    "modules": [
+        "add-to-group",
+        "custom"
+    ],
+    "parentResource": "dockmaker",
+    "functionName": "dockmakerPostConfirmation",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerTemplate": "PostConfirmation.json.ejs",
+    "roleName": "dockmakerPostConfirmation",
+    "skipEdit": true,
+    "resourceName": "dockmakerPostConfirmation"
+}

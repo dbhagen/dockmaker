@@ -14,10 +14,16 @@
         "categories": {
             "auth": {
                 "dockmaker": {
-                    "facebookAppId": "123",
-                    "googleClientId": "123",
-                    "amazonAppId": "123",
-                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"123\",\"client_secret\":\"123\"},{\"ProviderName\":\"Google\",\"client_id\":\"123\",\"client_secret\":\"123\"},{\"ProviderName\":\"LoginWithAmazon\",\"client_id\":\"123\",\"client_secret\":\"123\"}]"
+                    "facebookAppId": "522727431684119",
+                    "googleClientId": "f7897ca7ee6f60f7050fe6f0aacf0078",
+                    "amazonAppId": "amzn1.application-oa2-client.65dc744a5cf44919befc659ffaf31304",
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"522727431684119\",\"client_secret\":\"f7897ca7ee6f60f7050fe6f0aacf0078\"},{\"ProviderName\":\"Google\",\"client_id\":\"447155093382-j1d2dp9a75ga4k72knev9bucb026po8p.apps.googleusercontent.com\",\"client_secret\":\"vglk9aAx7wBYSAW7LtZw_yyR\"},{\"ProviderName\":\"LoginWithAmazon\",\"client_id\":\"amzn1.application-oa2-client.65dc744a5cf44919befc659ffaf31304\",\"client_secret\":\"ea6a6940d4e31c3aaa33e613fc221d049d72d5d041a88c0e9c9d9533fe8c2f81\"}]"
+                }
+            },
+            "function": {
+                "dockmakerPostAuthentication": {},
+                "dockmakerPostConfirmation": {
+                    "GROUP": "users"
                 }
             }
         }

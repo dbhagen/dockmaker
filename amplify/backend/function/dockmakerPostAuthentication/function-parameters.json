@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "custom"
+    ],
+    "parentResource": "dockmaker",
+    "functionName": "dockmakerPostAuthentication",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerTemplate": "PostAuthentication.json.ejs",
+    "roleName": "dockmakerPostAuthentication",
+    "skipEdit": true,
+    "resourceName": "dockmakerPostAuthentication"
+}

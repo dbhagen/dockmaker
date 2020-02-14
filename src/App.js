@@ -4,13 +4,26 @@ import Home from "./components/static/home";
 import NotFound from "./components/static/NotFound";
 import Amplify from "aws-amplify";
 import { withAuthenticator, Authenticator } from "aws-amplify-react";
+// import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import awsconfig from "./aws-exports";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-Amplify.configure(awsconfig);
+library.add(fab, faCheckSquare, faCoffee)
+
+Amplify.configure({
+  ...awsconfig,
+  Analytics: {
+    disabled: true
+  }
+});
+
 const signUpConfig = {
   // header: "Hello",
   hideAllDefaults: true,
@@ -42,6 +55,8 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/home/:id" component={Home} />
+          <Route path="/privacy" component={Home} />
+          <Route path="/tos" component={Home} />
           <Route component={NotFound} />
         </Switch>
       </div>
@@ -53,7 +68,8 @@ class App extends React.Component {
   }
 }
 
-export default withAuthenticator(App, {
-  signUpConfig,
-  usernameAttributes: "email"
-});
+export default App;
+// export default withAuthenticator(App, {
+//   signUpConfig,
+//   usernameAttributes: "email"
+// });
