@@ -1,0 +1,17 @@
+{
+    "trigger": true,
+    "modules": [
+        "add-to-group",
+        "custom"
+    ],
+    "parentResource": "dockmaker",
+    "functionName": "dockmakerPostConfirmation",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerDir": "/Users/dhagen/.nvm/versions/node/v13.6.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PostConfirmation",
+    "roleName": "dockmakerPostConfirmation",
+    "triggerTemplate": "PostConfirmation.json.ejs",
+    "triggerEventPath": "PostConfirmation.event.json",
+    "skipEdit": true,
+    "resourceName": "dockmakerPostConfirmation"
+}
