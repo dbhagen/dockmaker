@@ -7,8 +7,10 @@
     "functionName": "dockmakerPostAuthentication",
     "parentStack": "auth",
     "triggerEnvs": "[]",
-    "triggerTemplate": "PostAuthentication.json.ejs",
+    "triggerDir": "/Users/dhagen/.nvm/versions/node/v13.6.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PostAuthentication",
     "roleName": "dockmakerPostAuthentication",
+    "triggerTemplate": "PostAuthentication.json.ejs",
+    "triggerEventPath": "PostAuthentication.event.json",
     "skipEdit": true,
     "resourceName": "dockmakerPostAuthentication"
 }

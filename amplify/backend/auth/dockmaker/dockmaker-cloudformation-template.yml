@@ -137,10 +137,7 @@ Parameters:
                       
   userPoolGroupList:
     Type: CommaDelimitedList
-      
-  adminQueryGroup:
-    Type: String
-                                            
+                                    
   parentStack:
     Type: String
                 
@@ -164,7 +161,7 @@ Parameters:
               
   oAuthMetadata:
     Type: String
-            
+                        
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
 
