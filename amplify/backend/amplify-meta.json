@@ -1,213 +1,213 @@
 {
-	"providers": {
-		"awscloudformation": {
-			"AuthRoleName": "amplify-dockmaker-master-132005-authRole",
-			"UnauthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-authRole",
-			"Region": "us-east-1",
-			"DeploymentBucketName": "amplify-dockmaker-master-132005-deployment",
-			"UnauthRoleName": "amplify-dockmaker-master-132005-unauthRole",
-			"StackName": "amplify-dockmaker-master-132005",
-			"StackId": "arn:aws:cloudformation:us-east-1:782559036331:stack/amplify-dockmaker-master-132005/878acc70-4395-11ea-9562-1246411399d1",
-			"AmplifyAppId": "drhwxuqz25hy3"
-		}
-	},
-	"auth": {
-		"userPoolGroups": {
-			"service": "Cognito-UserPool-Groups",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "auth",
-					"resourceName": "dockmaker",
-					"attributes": [
-						"UserPoolId",
-						"AppClientIDWeb",
-						"AppClientID",
-						"IdentityPoolId"
-					]
-				}
-			],
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/template.json",
-				"logicalId": "authuserPoolGroups"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.956Z",
-			"output": {
-				"usersGroupRole": "arn:aws:iam::782559036331:role/us-east-1_f3YlpRMEX-usersGroupRole"
-			},
-			"lastPushDirHash": "tlxND3GK3iRNIlpjx3rhLDLvvSA="
-		},
-		"dockmaker": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "function",
-					"resourceName": "dockmakerPostAuthentication",
-					"triggerProvider": "Cognito",
-					"attributes": [
-						"Arn",
-						"Name"
-					]
-				},
-				{
-					"category": "function",
-					"resourceName": "dockmakerPostConfirmation",
-					"triggerProvider": "Cognito",
-					"attributes": [
-						"Arn",
-						"Name"
-					]
-				}
-			],
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/dockmaker-cloudformation-template.yml",
-				"logicalId": "authdockmaker"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.963Z",
-			"output": {
-				"AppClientSecret": "1g8h40o3l3cb1urcemmuca8rf8e3cp5ekg8hh498llhrpmb8qctn",
-				"AppClientID": "63hjdlfm2jh3b09itcgl9vkmdd",
-				"AmazonWebClient": "amzn1.application-oa2-client.65dc744a5cf44919befc659ffaf31304",
-				"HostedUIDomain": "auth-master",
-				"FacebookWebClient": "522727431684119",
-				"OAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
-				"UserPoolName": "dockmaker",
-				"GoogleWebClient": "f7897ca7ee6f60f7050fe6f0aacf0078",
-				"CreatedSNSRole": "arn:aws:iam::782559036331:role/sns132005-master",
-				"UserPoolId": "us-east-1_f3YlpRMEX",
-				"AppClientIDWeb": "668dluosvmco9e745i60nmd9rt",
-				"IdentityPoolId": "us-east-1:157cab8a-a7ce-445d-8c1b-d091398907e2",
-				"IdentityPoolName": "dockermaker__master"
-			},
-			"lastPushDirHash": "OXUK7T7ev1t4tqVihvAcJ4ROcUc="
-		}
-	},
-	"function": {
-		"AdminQueriesf4f202d5": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"dependsOn": [
-				{
-					"category": "auth",
-					"resourceName": "dockmaker",
-					"attributes": [
-						"UserPoolId"
-					]
-				}
-			],
-			"lastBuildTimeStamp": "2020-02-13T21:13:03.146Z",
-			"lastPackageTimeStamp": "2020-02-13T21:13:05.757Z",
-			"distZipFilename": "AdminQueriesf4f202d5-7738345972585a584c54-build.zip",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/AdminQueriesf4f202d5-cloudformation-template.json",
-				"logicalId": "functionAdminQueriesf4f202d5"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.958Z",
-			"output": {
-				"Region": "us-east-1",
-				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:AdminQueriesf4f202d5-master",
-				"Name": "AdminQueriesf4f202d5-master",
-				"LambdaExecutionRole": "AdminQueriesf4f202d5LambdaRole-master"
-			},
-			"lastPushDirHash": "42nkcp8NnQlL9FLTANIJ4MZJNL0="
-		},
-		"dockmakerPostAuthentication": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"lastBuildTimeStamp": "2020-02-13T21:13:00.031Z",
-			"lastPackageTimeStamp": "2020-02-13T21:13:03.408Z",
-			"distZipFilename": "dockmakerPostAuthentication-325a585a567a5741522f-build.zip",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostAuthentication-cloudformation-template.json",
-				"logicalId": "functiondockmakerPostAuthentication"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.958Z",
-			"output": {
-				"Region": "us-east-1",
-				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostAuthentication-master",
-				"Name": "dockmakerPostAuthentication-master",
-				"LambdaExecutionRole": "dockmakerPostAuthentication-master"
-			},
-			"lastPushDirHash": "cT4+QlhK1OTzYSKATxMBVXxbeNs="
-		},
-		"dockmakerPostConfirmation": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"lastBuildTimeStamp": "2020-02-13T21:13:01.054Z",
-			"lastPackageTimeStamp": "2020-02-13T21:13:03.618Z",
-			"distZipFilename": "dockmakerPostConfirmation-6b32316770634a376463-build.zip",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostConfirmation-cloudformation-template.json",
-				"logicalId": "functiondockmakerPostConfirmation"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.959Z",
-			"output": {
-				"Region": "us-east-1",
-				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostConfirmation-master",
-				"Name": "dockmakerPostConfirmation-master",
-				"LambdaExecutionRole": "dockmakerPostConfirmation-master"
-			},
-			"lastPushDirHash": "vo2kpfunjGoEippWjLUVTS2uEI8="
-		}
-	},
-	"api": {
-		"AdminQueries": {
-			"service": "API Gateway",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "auth",
-					"resourceName": "dockmaker",
-					"attributes": [
-						"UserPoolId"
-					]
-				},
-				{
-					"category": "function",
-					"resourceName": "AdminQueriesf4f202d5",
-					"attributes": [
-						"Arn",
-						"Name"
-					]
-				}
-			],
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/api/admin-queries-cloudformation-template.json",
-				"logicalId": "apiAdminQueries"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.960Z",
-			"output": {
-				"ApiName": "AdminQueries",
-				"RootUrl": "https://6ufrapend7.execute-api.us-east-1.amazonaws.com/master"
-			},
-			"lastPushDirHash": "vGG/oeR3sGMLeWeRopWsq08yzVE="
-		}
-	},
-	"hosting": {
-		"S3AndCloudFront": {
-			"service": "S3AndCloudFront",
-			"providerPlugin": "awscloudformation",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/hosting/template.json",
-				"logicalId": "hostingS3AndCloudFront"
-			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.960Z",
-			"output": {
-				"CloudFrontSecureURL": "https://d2c868455dll00.cloudfront.net",
-				"S3BucketSecureURL": "https://dockmaker-20200130224100-hostingbucket-master.s3.amazonaws.com",
-				"CloudFrontOriginAccessIdentity": "E1XVEKQNJ3J0UZ",
-				"WebsiteURL": "http://dockmaker-20200130224100-hostingbucket-master.s3-website-us-east-1.amazonaws.com",
-				"CloudFrontDistributionID": "E29HBHB6BLR692",
-				"Region": "us-east-1",
-				"HostingBucketName": "dockmaker-20200130224100-hostingbucket-master",
-				"CloudFrontDomainName": "d2c868455dll00.cloudfront.net"
-			},
-			"lastPushDirHash": "Q3+50Fho8YJ6YMMf43vHIpLMOxg="
-		}
-	}
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-dockmaker-master-132005-authRole",
+            "UnauthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::782559036331:role/amplify-dockmaker-master-132005-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-dockmaker-master-132005-deployment",
+            "UnauthRoleName": "amplify-dockmaker-master-132005-unauthRole",
+            "StackName": "amplify-dockmaker-master-132005",
+            "StackId": "arn:aws:cloudformation:us-east-1:782559036331:stack/amplify-dockmaker-master-132005/878acc70-4395-11ea-9562-1246411399d1",
+            "AmplifyAppId": "drhwxuqz25hy3"
+        }
+    },
+    "auth": {
+        "userPoolGroups": {
+            "service": "Cognito-UserPool-Groups",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "dockmaker",
+                    "attributes": [
+                        "UserPoolId",
+                        "AppClientIDWeb",
+                        "AppClientID",
+                        "IdentityPoolId"
+                    ]
+                }
+            ],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/template.json",
+                "logicalId": "authuserPoolGroups"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:36.998Z",
+            "output": {
+                "usersGroupRole": "arn:aws:iam::782559036331:role/us-east-1_f3YlpRMEX-usersGroupRole"
+            },
+            "lastPushDirHash": "tlxND3GK3iRNIlpjx3rhLDLvvSA="
+        },
+        "dockmaker": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "dockmakerPostAuthentication",
+                    "triggerProvider": "Cognito",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "dockmakerPostConfirmation",
+                    "triggerProvider": "Cognito",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                }
+            ],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/dockmaker-cloudformation-template.yml",
+                "logicalId": "authdockmaker"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:36.999Z",
+            "output": {
+                "AppClientSecret": "1g8h40o3l3cb1urcemmuca8rf8e3cp5ekg8hh498llhrpmb8qctn",
+                "AppClientID": "63hjdlfm2jh3b09itcgl9vkmdd",
+                "AmazonWebClient": "amzn1.application-oa2-client.65dc744a5cf44919befc659ffaf31304",
+                "HostedUIDomain": "auth-master",
+                "FacebookWebClient": "522727431684119",
+                "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+                "UserPoolName": "dockmaker",
+                "GoogleWebClient": "f7897ca7ee6f60f7050fe6f0aacf0078",
+                "CreatedSNSRole": "arn:aws:iam::782559036331:role/sns132005-master",
+                "UserPoolId": "us-east-1_f3YlpRMEX",
+                "AppClientIDWeb": "668dluosvmco9e745i60nmd9rt",
+                "IdentityPoolId": "us-east-1:157cab8a-a7ce-445d-8c1b-d091398907e2",
+                "IdentityPoolName": "dockermaker__master"
+            },
+            "lastPushDirHash": "OXUK7T7ev1t4tqVihvAcJ4ROcUc="
+        }
+    },
+    "function": {
+        "AdminQueriesf4f202d5": {
+            "service": "Lambda",
+            "providerPlugin": "awscloudformation",
+            "build": true,
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "dockmaker",
+                    "attributes": [
+                        "UserPoolId"
+                    ]
+                }
+            ],
+            "lastBuildTimeStamp": "2020-02-13T21:13:03.146Z",
+            "lastPackageTimeStamp": "2020-02-13T21:13:05.757Z",
+            "distZipFilename": "AdminQueriesf4f202d5-7738345972585a584c54-build.zip",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/AdminQueriesf4f202d5-cloudformation-template.json",
+                "logicalId": "functionAdminQueriesf4f202d5"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:36.999Z",
+            "output": {
+                "Region": "us-east-1",
+                "Arn": "arn:aws:lambda:us-east-1:782559036331:function:AdminQueriesf4f202d5-master",
+                "Name": "AdminQueriesf4f202d5-master",
+                "LambdaExecutionRole": "AdminQueriesf4f202d5LambdaRole-master"
+            },
+            "lastPushDirHash": "42nkcp8NnQlL9FLTANIJ4MZJNL0="
+        },
+        "dockmakerPostAuthentication": {
+            "service": "Lambda",
+            "providerPlugin": "awscloudformation",
+            "build": true,
+            "lastBuildTimeStamp": "2020-02-13T21:13:00.031Z",
+            "lastPackageTimeStamp": "2020-02-13T21:13:03.408Z",
+            "distZipFilename": "dockmakerPostAuthentication-325a585a567a5741522f-build.zip",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostAuthentication-cloudformation-template.json",
+                "logicalId": "functiondockmakerPostAuthentication"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:37.000Z",
+            "output": {
+                "Region": "us-east-1",
+                "Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostAuthentication-master",
+                "Name": "dockmakerPostAuthentication-master",
+                "LambdaExecutionRole": "dockmakerPostAuthentication-master"
+            },
+            "lastPushDirHash": "cT4+QlhK1OTzYSKATxMBVXxbeNs="
+        },
+        "dockmakerPostConfirmation": {
+            "service": "Lambda",
+            "providerPlugin": "awscloudformation",
+            "build": true,
+            "lastBuildTimeStamp": "2020-02-13T21:13:01.054Z",
+            "lastPackageTimeStamp": "2020-02-13T21:13:03.618Z",
+            "distZipFilename": "dockmakerPostConfirmation-6b32316770634a376463-build.zip",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostConfirmation-cloudformation-template.json",
+                "logicalId": "functiondockmakerPostConfirmation"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:37.000Z",
+            "output": {
+                "Region": "us-east-1",
+                "Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostConfirmation-master",
+                "Name": "dockmakerPostConfirmation-master",
+                "LambdaExecutionRole": "dockmakerPostConfirmation-master"
+            },
+            "lastPushDirHash": "vo2kpfunjGoEippWjLUVTS2uEI8="
+        }
+    },
+    "api": {
+        "AdminQueries": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "dockmaker",
+                    "attributes": [
+                        "UserPoolId"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "AdminQueriesf4f202d5",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                }
+            ],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/api/admin-queries-cloudformation-template.json",
+                "logicalId": "apiAdminQueries"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:37.001Z",
+            "output": {
+                "ApiName": "AdminQueries",
+                "RootUrl": "https://6ufrapend7.execute-api.us-east-1.amazonaws.com/master"
+            },
+            "lastPushDirHash": "vGG/oeR3sGMLeWeRopWsq08yzVE="
+        }
+    },
+    "hosting": {
+        "S3AndCloudFront": {
+            "service": "S3AndCloudFront",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/hosting/template.json",
+                "logicalId": "hostingS3AndCloudFront"
+            },
+            "lastPushTimeStamp": "2020-03-02T20:07:37.002Z",
+            "output": {
+                "CloudFrontSecureURL": "https://d2c868455dll00.cloudfront.net",
+                "S3BucketSecureURL": "https://dockmaker-20200130224100-hostingbucket-master.s3.amazonaws.com",
+                "CloudFrontOriginAccessIdentity": "E1XVEKQNJ3J0UZ",
+                "WebsiteURL": "http://dockmaker-20200130224100-hostingbucket-master.s3-website-us-east-1.amazonaws.com",
+                "CloudFrontDistributionID": "E29HBHB6BLR692",
+                "Region": "us-east-1",
+                "HostingBucketName": "dockmaker-20200130224100-hostingbucket-master",
+                "CloudFrontDomainName": "d2c868455dll00.cloudfront.net"
+            },
+            "lastPushDirHash": "Q3+50Fho8YJ6YMMf43vHIpLMOxg="
+        }
+    }
 }
