@@ -32,7 +32,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/template.json",
 				"logicalId": "authuserPoolGroups"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.956Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.724Z",
 			"output": {
 				"usersGroupRole": "arn:aws:iam::782559036331:role/us-east-1_f3YlpRMEX-usersGroupRole"
 			},
@@ -65,7 +65,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/auth/dockmaker-cloudformation-template.yml",
 				"logicalId": "authdockmaker"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.963Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.726Z",
 			"output": {
 				"AppClientSecret": "1g8h40o3l3cb1urcemmuca8rf8e3cp5ekg8hh498llhrpmb8qctn",
 				"AppClientID": "63hjdlfm2jh3b09itcgl9vkmdd",
@@ -105,7 +105,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/AdminQueriesf4f202d5-cloudformation-template.json",
 				"logicalId": "functionAdminQueriesf4f202d5"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.958Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.727Z",
 			"output": {
 				"Region": "us-east-1",
 				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:AdminQueriesf4f202d5-master",
@@ -125,7 +125,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostAuthentication-cloudformation-template.json",
 				"logicalId": "functiondockmakerPostAuthentication"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.958Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.728Z",
 			"output": {
 				"Region": "us-east-1",
 				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostAuthentication-master",
@@ -145,7 +145,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/function/dockmakerPostConfirmation-cloudformation-template.json",
 				"logicalId": "functiondockmakerPostConfirmation"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.959Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.728Z",
 			"output": {
 				"Region": "us-east-1",
 				"Arn": "arn:aws:lambda:us-east-1:782559036331:function:dockmakerPostConfirmation-master",
@@ -180,12 +180,35 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/api/admin-queries-cloudformation-template.json",
 				"logicalId": "apiAdminQueries"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.960Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.729Z",
 			"output": {
 				"ApiName": "AdminQueries",
 				"RootUrl": "https://6ufrapend7.execute-api.us-east-1.amazonaws.com/master"
 			},
 			"lastPushDirHash": "vGG/oeR3sGMLeWeRopWsq08yzVE="
+		},
+		"dockmaker": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authdockmaker"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "ztbep5hmszap5c3ffifxllvqdy",
+				"GraphQLAPIEndpointOutput": "https://kldxbe63lzco5nzp5h26oghiji.appsync-api.us-east-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apidockmaker"
+			},
+			"lastPushTimeStamp": "2020-03-10T16:47:04.404Z",
+			"lastPushDirHash": "XxuW+zc9OL+qF85MaHfkD+rUhhA="
 		}
 	},
 	"hosting": {
@@ -196,7 +219,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-dockmaker-master-132005-deployment/amplify-cfn-templates/hosting/template.json",
 				"logicalId": "hostingS3AndCloudFront"
 			},
-			"lastPushTimeStamp": "2020-02-14T19:13:44.960Z",
+			"lastPushTimeStamp": "2020-03-10T16:47:02.731Z",
 			"output": {
 				"CloudFrontSecureURL": "https://d2c868455dll00.cloudfront.net",
 				"S3BucketSecureURL": "https://dockmaker-20200130224100-hostingbucket-master.s3.amazonaws.com",

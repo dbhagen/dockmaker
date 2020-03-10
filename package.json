@@ -1,5 +1,12 @@
 {
   "name": "dockmaker",
+  "description": "Dockfile generator",
+  "author": {
+    "name": "Daniel B. Hagen",
+    "email": "daniel.b.hagen@gmail.com",
+    "url": "https://danielbhagen.com"
+  },
+  "homepage": "https://dockmaker.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,6 +21,7 @@
   },
   "dependencies": {
     "aws-amplify": "^2.2.6",
+    "aws-amplify-vue": "^1.1.4",
     "aws-appsync": "^3.0.2",
     "core-js": "^3.6.4",
     "graphql": "^14.6.0",
@@ -45,6 +53,8 @@
     "eslint-plugin-graphql": "^2.1.0",
     "eslint-plugin-vue": "^6.1.2",
     "graphql-tag": "^2.9.0",
+    "gulp": "^4.0.2",
+    "gulp-favicons": "^2.4.0",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-i18n": "^0.6.1",

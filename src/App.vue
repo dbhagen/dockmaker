@@ -1,52 +1,11 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      clipped
-      app
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-navigation-drawer
-      v-model="blockDrawer"
-      right
-      clipped
-      app
-      stateless
-    >
-      <portal-target
-        ref="portal-target"
-        name="destination"
-        multiple
-        @change="blockDrawerChanged"
-      />
-      <div :class="$style.shade" />
-    </v-navigation-drawer>
-
     <v-app-bar
       app
+      clipped-left
       clipped-right
       color="primary"
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <div class="d-flex align-center">
         <v-btn
           to="/"
@@ -75,17 +34,104 @@
       <v-spacer />
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+        v-if="!user"
+        to="/auth"
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-      <v-btn to="/auth">
         Login
       </v-btn>
+      <v-btn
+        v-if="user"
+        to="/auth/signout"
+      >
+        Logout
+      </v-btn>
     </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      clipped
+      :mini-variant="drawerMini"
+      :expand-on-hover="drawerMiniHover"
+      app
+      stateless
+    >
+      <v-list dense>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-contact-mail</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+      <template v-slot:append>
+        <v-list dense>
+          <v-list-item
+            link
+            @click="drawerPinClick"
+          >
+            <v-list-item-action>
+              <v-icon v-if="drawerMiniHover">
+                mdi-pin-off
+              </v-icon>
+              <v-icon v-if="!drawerMiniHover">
+                mdi-pin
+              </v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title v-if="drawerMiniHover">
+                Keep Open
+              </v-list-item-title>
+              <v-list-item-title v-if="!drawerMiniHover">
+                Hover over
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item
+            link
+            :disabled="drawerMiniHover"
+            @click="drawerMini=!drawerMini"
+          >
+            <v-list-item-action>
+              <v-icon v-if="drawerMini">
+                mdi-menu-right
+              </v-icon>
+              <v-icon v-if="!drawerMini">
+                mdi-menu-left
+              </v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Colapse</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </template>
+    </v-navigation-drawer>
+
+    <v-navigation-drawer
+      v-model="blockDrawer"
+      right
+      clipped
+      app
+      stateless
+    >
+      <portal-target
+        ref="portal-target"
+        name="destination"
+        multiple
+        @change="blockDrawerChanged"
+      />
+      <div :class="$style.shade" />
+    </v-navigation-drawer>
 
     <v-content>
       <router-view />
@@ -94,11 +140,12 @@
 </template>
 
 <script>
-import { components } from 'aws-amplify-vue'
+import AmplifyStore from './store/index';
+import { components } from "aws-amplify-vue";
 // import { AmplifyEventBus } from 'aws-amplify-vue';
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     ...components
@@ -106,9 +153,16 @@ export default {
 
   data() {
     return {
-    drawer: null,
-    blockDrawer: false,
-    logger: null,
+      drawer: true,
+      drawerMini: true,
+      drawerMiniHover: false,
+      blockDrawer: false,
+      logger: null
+    };
+  },
+  computed: {
+    user() {
+      return AmplifyStore.state.user;
     }
   },
   created() {
@@ -121,18 +175,67 @@ export default {
   methods: {
     blockDrawerChanged(evt) {
       this.blockDrawer = evt;
+    },
+    drawerPinClick() {
+      this.drawerMiniHover=!this.drawerMiniHover
+      if (this.drawerMiniHover) {
+        this.drawerMini = false;
+      }
     }
   }
 };
 </script>
 
 <style module>
-.shade  { position:absolute; bottom:0; height:60px; width:100%; z-index:10;
-background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(152,152,152,0) 40%, rgba(23,23,23,0.3) 90%, rgba(0,0,0,0.3) 99%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(152,152,152,0)), color-stop(90%,rgba(23,23,23,0.3)), color-stop(99%,rgba(0,0,0,0.3))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(152,152,152,0) 40%,rgba(23,23,23,0.3) 90%,rgba(0,0,0,0.3) 99%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(152,152,152,0) 40%,rgba(23,23,23,0.3) 90%,rgba(0,0,0,0.3) 99%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(152,152,152,0) 40%,rgba(23,23,23,0.3) 90%,rgba(0,0,0,0.3) 99%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(152,152,152,0) 40%,rgba(23,23,23,0.3) 90%,rgba(0,0,0,0.3) 99%); /* W3C */
+.shade {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(152, 152, 152, 0) 40%,
+    rgba(23, 23, 23, 0.3) 90%,
+    rgba(0, 0, 0, 0.3) 99%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(40%, rgba(152, 152, 152, 0)),
+    color-stop(90%, rgba(23, 23, 23, 0.3)),
+    color-stop(99%, rgba(0, 0, 0, 0.3))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(152, 152, 152, 0) 40%,
+    rgba(23, 23, 23, 0.3) 90%,
+    rgba(0, 0, 0, 0.3) 99%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(152, 152, 152, 0) 40%,
+    rgba(23, 23, 23, 0.3) 90%,
+    rgba(0, 0, 0, 0.3) 99%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(152, 152, 152, 0) 40%,
+    rgba(23, 23, 23, 0.3) 90%,
+    rgba(0, 0, 0, 0.3) 99%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(152, 152, 152, 0) 40%,
+    rgba(23, 23, 23, 0.3) 90%,
+    rgba(0, 0, 0, 0.3) 99%
+  ); /* W3C */
 }
 </style>

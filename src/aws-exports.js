@@ -27,6 +27,9 @@ const awsmobile = {
             "region": "us-east-1"
         }
     ],
+    "aws_appsync_graphqlEndpoint": "https://kldxbe63lzco5nzp5h26oghiji.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_region": "us-east-1",
+    "aws_appsync_authenticationType": "AMAZON_COGNITO_USER_POOLS",
     "aws_content_delivery_bucket": "dockmaker-20200130224100-hostingbucket-master",
     "aws_content_delivery_bucket_region": "us-east-1",
     "aws_content_delivery_url": "https://d2c868455dll00.cloudfront.net"
