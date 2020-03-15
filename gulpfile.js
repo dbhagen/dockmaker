@@ -5,6 +5,7 @@ const inject = require('gulp-inject');
 const fs = require('fs');
 
 const packageJSON = JSON.parse(fs.readFileSync('./package.json'));
+/* eslint-disable no-console */
 
 function defaultTask(cb) {
   del('./public/index.html');

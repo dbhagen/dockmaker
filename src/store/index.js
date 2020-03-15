@@ -1,8 +1,13 @@
+import Amplify from 'aws-amplify';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 // TODO: Set localstorage encryption
+
+const Logger = new Amplify.Logger('STORE_script'); // eslint-disable-line no-unused-vars
+
 Vue.use(Vuex);
+
 /* eslint-disable no-param-reassign */
 export default new Vuex.Store({
   plugins: [createPersistedState()],
