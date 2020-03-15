@@ -43,3 +43,81 @@ export const onDeleteElements = /* GraphQL */ `
     }
   }
 `;
+export const onCreateUserdata = /* GraphQL */ `
+  subscription OnCreateUserdata($owner: String) {
+    onCreateUserdata(owner: $owner) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const onUpdateUserdata = /* GraphQL */ `
+  subscription OnUpdateUserdata($owner: String) {
+    onUpdateUserdata(owner: $owner) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const onDeleteUserdata = /* GraphQL */ `
+  subscription OnDeleteUserdata($owner: String) {
+    onDeleteUserdata(owner: $owner) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const onCreateProject = /* GraphQL */ `
+  subscription OnCreateProject($owner: String) {
+    onCreateProject(owner: $owner) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const onUpdateProject = /* GraphQL */ `
+  subscription OnUpdateProject($owner: String) {
+    onUpdateProject(owner: $owner) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const onDeleteProject = /* GraphQL */ `
+  subscription OnDeleteProject($owner: String) {
+    onDeleteProject(owner: $owner) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;

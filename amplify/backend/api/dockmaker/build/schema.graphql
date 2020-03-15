@@ -9,6 +9,26 @@ type elements {
   _lastChangedAt: AWSTimestamp!
 }
 
+type userdata {
+  id: ID!
+  githubAPIKey: String
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+  owner: String
+}
+
+type project {
+  id: ID!
+  name: String!
+  githubRepo: String
+  fileLocation: String
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+  owner: String
+}
+
 enum ModelSortDirection {
   ASC
   DESC
@@ -108,6 +128,12 @@ type Query {
   syncElements(filter: ModelelementsFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelelementsConnection
   getElements(id: ID!): elements
   listElementss(filter: ModelelementsFilterInput, limit: Int, nextToken: String): ModelelementsConnection
+  syncUserdata(filter: ModeluserdataFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModeluserdataConnection
+  getUserdata(id: ID!): userdata
+  listUserdatas(filter: ModeluserdataFilterInput, limit: Int, nextToken: String): ModeluserdataConnection
+  syncProjects(filter: ModelprojectFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelprojectConnection
+  getProject(id: ID!): project
+  listProjects(filter: ModelprojectFilterInput, limit: Int, nextToken: String): ModelprojectConnection
 }
 
 input CreateElementsInput {
@@ -137,6 +163,12 @@ type Mutation {
   createElements(input: CreateElementsInput!, condition: ModelelementsConditionInput): elements
   updateElements(input: UpdateElementsInput!, condition: ModelelementsConditionInput): elements
   deleteElements(input: DeleteElementsInput!, condition: ModelelementsConditionInput): elements
+  createUserdata(input: CreateUserdataInput!, condition: ModeluserdataConditionInput): userdata
+  updateUserdata(input: UpdateUserdataInput!, condition: ModeluserdataConditionInput): userdata
+  deleteUserdata(input: DeleteUserdataInput!, condition: ModeluserdataConditionInput): userdata
+  createProject(input: CreateProjectInput!, condition: ModelprojectConditionInput): project
+  updateProject(input: UpdateProjectInput!, condition: ModelprojectConditionInput): project
+  deleteProject(input: DeleteProjectInput!, condition: ModelprojectConditionInput): project
 }
 
 input ModelelementsConditionInput {
@@ -166,4 +198,94 @@ type Subscription {
   onCreateElements: elements @aws_subscribe(mutations: ["createElements"])
   onUpdateElements: elements @aws_subscribe(mutations: ["updateElements"])
   onDeleteElements: elements @aws_subscribe(mutations: ["deleteElements"])
+  onCreateUserdata(owner: String): userdata @aws_subscribe(mutations: ["createUserdata"])
+  onUpdateUserdata(owner: String): userdata @aws_subscribe(mutations: ["updateUserdata"])
+  onDeleteUserdata(owner: String): userdata @aws_subscribe(mutations: ["deleteUserdata"])
+  onCreateProject(owner: String): project @aws_subscribe(mutations: ["createProject"])
+  onUpdateProject(owner: String): project @aws_subscribe(mutations: ["updateProject"])
+  onDeleteProject(owner: String): project @aws_subscribe(mutations: ["deleteProject"])
+}
+
+type ModeluserdataConnection {
+  items: [userdata]
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModeluserdataFilterInput {
+  id: ModelIDInput
+  githubAPIKey: ModelStringInput
+  and: [ModeluserdataFilterInput]
+  or: [ModeluserdataFilterInput]
+  not: ModeluserdataFilterInput
+}
+
+input CreateUserdataInput {
+  id: ID
+  githubAPIKey: String
+  _version: Int
+}
+
+input UpdateUserdataInput {
+  id: ID!
+  githubAPIKey: String
+  _version: Int
+}
+
+input DeleteUserdataInput {
+  id: ID
+  _version: Int
+}
+
+input ModeluserdataConditionInput {
+  githubAPIKey: ModelStringInput
+  and: [ModeluserdataConditionInput]
+  or: [ModeluserdataConditionInput]
+  not: ModeluserdataConditionInput
+}
+
+type ModelprojectConnection {
+  items: [project]
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelprojectFilterInput {
+  id: ModelIDInput
+  name: ModelStringInput
+  githubRepo: ModelStringInput
+  fileLocation: ModelStringInput
+  and: [ModelprojectFilterInput]
+  or: [ModelprojectFilterInput]
+  not: ModelprojectFilterInput
+}
+
+input CreateProjectInput {
+  id: ID
+  name: String!
+  githubRepo: String
+  fileLocation: String
+  _version: Int
+}
+
+input UpdateProjectInput {
+  id: ID!
+  name: String
+  githubRepo: String
+  fileLocation: String
+  _version: Int
+}
+
+input DeleteProjectInput {
+  id: ID
+  _version: Int
+}
+
+input ModelprojectConditionInput {
+  name: ModelStringInput
+  githubRepo: ModelStringInput
+  fileLocation: ModelStringInput
+  and: [ModelprojectConditionInput]
+  or: [ModelprojectConditionInput]
+  not: ModelprojectConditionInput
 }

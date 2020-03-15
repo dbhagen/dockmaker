@@ -52,3 +52,99 @@ export const deleteElements = /* GraphQL */ `
     }
   }
 `;
+export const createUserdata = /* GraphQL */ `
+  mutation CreateUserdata(
+    $input: CreateUserdataInput!
+    $condition: ModeluserdataConditionInput
+  ) {
+    createUserdata(input: $input, condition: $condition) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const updateUserdata = /* GraphQL */ `
+  mutation UpdateUserdata(
+    $input: UpdateUserdataInput!
+    $condition: ModeluserdataConditionInput
+  ) {
+    updateUserdata(input: $input, condition: $condition) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const deleteUserdata = /* GraphQL */ `
+  mutation DeleteUserdata(
+    $input: DeleteUserdataInput!
+    $condition: ModeluserdataConditionInput
+  ) {
+    deleteUserdata(input: $input, condition: $condition) {
+      id
+      githubAPIKey
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const createProject = /* GraphQL */ `
+  mutation CreateProject(
+    $input: CreateProjectInput!
+    $condition: ModelprojectConditionInput
+  ) {
+    createProject(input: $input, condition: $condition) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const updateProject = /* GraphQL */ `
+  mutation UpdateProject(
+    $input: UpdateProjectInput!
+    $condition: ModelprojectConditionInput
+  ) {
+    updateProject(input: $input, condition: $condition) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;
+export const deleteProject = /* GraphQL */ `
+  mutation DeleteProject(
+    $input: DeleteProjectInput!
+    $condition: ModelprojectConditionInput
+  ) {
+    deleteProject(input: $input, condition: $condition) {
+      id
+      name
+      githubRepo
+      fileLocation
+      _version
+      _deleted
+      _lastChangedAt
+      owner
+    }
+  }
+`;

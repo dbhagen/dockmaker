@@ -2,33 +2,34 @@
   <v-app>
     <v-app-bar
       app
+      dense
       clipped-left
       clipped-right
       color="primary"
     >
       <div class="d-flex align-center">
         <v-btn
-          to="/"
+          exact-active-class
+          active-class
+          class="headline font-weight-bold"
           text
         >
           <v-img
-            alt="Vuetify Logo"
+            alt="Dockmaker Logo"
             class="shrink mr-2"
             contain
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+            src="/android-chrome-256x256.png"
             transition="scale-transition"
-            width="40"
-          />
-
-          <v-img
-            alt="Vuetify Name"
-            class="shrink mt-1 hidden-sm-and-down"
-            contain
-            min-width="100"
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-            width="100"
-          />
+            max-height="36"
+            max-width="36"
+          />Dockmaker
         </v-btn>
+        <div v-if="selectedProject">
+          <v-icon>mdi-menu-right</v-icon>
+          <v-btn text>
+            {{ selectedProject }}
+          </v-btn>
+        </div>
       </div>
 
       <v-spacer />
@@ -56,7 +57,10 @@
       stateless
     >
       <v-list dense>
-        <v-list-item link>
+        <v-list-item
+          link
+          to="/"
+        >
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -64,12 +68,27 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item
+          link
+          to="/projects"
+        >
           <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
+            <v-icon>mdi-folder-open</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
+            <v-list-item-title>Projects</v-list-item-title>
+            <v-select :items="projects" />
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          link
+          to="/github"
+        >
+          <v-list-item-action>
+            <v-icon>mdi-github</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Github Connection</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -140,15 +159,17 @@
 </template>
 
 <script>
+import { AmplifyEventBus, components } from 'aws-amplify-vue';
+import { mapState } from 'vuex';
+
 import AmplifyStore from './store/index';
-import { components } from "aws-amplify-vue";
 // import { AmplifyEventBus } from 'aws-amplify-vue';
 
 export default {
-  name: "App",
+  name: 'App',
 
   components: {
-    ...components
+    ...components,
   },
 
   data() {
@@ -157,32 +178,38 @@ export default {
       drawerMini: true,
       drawerMiniHover: false,
       blockDrawer: false,
-      logger: null
+      logger: null,
+      selectedProject: null,
+      projects: [
+        { text: 'test', value: 'test' },
+        { text: 'test2', value: 'test2' },
+      ],
     };
   },
-  computed: {
+  computed: mapState({
     user() {
       return AmplifyStore.state.user;
-    }
-  },
+    },
+    project: 'project',
+  }),
   created() {
-    this.logger = new this.$Amplify.Logger("APP_component");
+    this.logger = new this.$Amplify.Logger('APP_component');
 
-    // AmplifyEventBus.$on('authState', info => {
-    // this.logger.info(`Here is the auth event that was just emitted by an Amplify component: ${info}`)
-    // });
+    AmplifyEventBus.$on('authState', (info) => {
+      this.logger.info(`Here is the auth event that was just emitted by an Amplify component: ${info}`);
+    });
   },
   methods: {
     blockDrawerChanged(evt) {
       this.blockDrawer = evt;
     },
     drawerPinClick() {
-      this.drawerMiniHover=!this.drawerMiniHover
+      this.drawerMiniHover = !this.drawerMiniHover;
       if (this.drawerMiniHover) {
         this.drawerMini = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

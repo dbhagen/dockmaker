@@ -1,7 +1,23 @@
 type elements @model {
-	id: ID!
-	title: String!
-	content: String!
-	price: Int
-	rating: Float
+  id: ID!
+  title: String!
+  content: String!
+  price: Int
+  rating: Float
+}
+
+type userdata
+  @model
+  @auth(rules: [{ allow: groups, groups: ["SuperUser"] }, { allow: owner }]) {
+  id: ID!
+  githubAPIKey: String
+}
+
+type project
+  @model
+  @auth(rules: [{ allow: groups, groups: ["SuperUser"] }, { allow: owner }]) {
+  id: ID!
+  name: String!
+  githubRepo: String
+  fileLocation: String
 }

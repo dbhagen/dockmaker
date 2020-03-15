@@ -1,5 +1,4 @@
 {
-    "CreateAPIKey": 0,
     "AppSyncApiName": "dockmaker",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": "false",
@@ -9,6 +8,6 @@
             "Outputs.UserPoolId"
         ]
     },
-    "S3DeploymentBucket": "amplify-dockmaker-master-132005-deployment",
-    "S3DeploymentRootKey": "amplify-appsync-files/43962af01a31d786d5f3a42fd22143c4531ff9a5"
+    "S3DeploymentBucket": "fake-bucket",
+    "S3DeploymentRootKey": "amplify-appsync-files/5833cea22ad6abf5ce7685dd114b0137f45dd66b"
 }

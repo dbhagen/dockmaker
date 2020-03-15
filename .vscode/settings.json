@@ -1,3 +1,14 @@
 {
-    "eslint.enable": true
+    "eslint.enable": true,
+    "cSpell.words": [
+        "dockicon",
+        "in",
+        "multiline",
+        "octonode",
+        "parens",
+        "singleline",
+        "space",
+        "styleguidist",
+        "vuedraggable"
+    ]
 }

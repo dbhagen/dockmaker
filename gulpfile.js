@@ -1,12 +1,15 @@
-var gulp = require("gulp");
-var favicons = require("gulp-favicons");
-var fs = require("fs");
+const gulp = require('gulp');
+const del = require('del');
+const favicons = require('gulp-favicons');
+const inject = require('gulp-inject');
+const fs = require('fs');
 
-var packageJSON = JSON.parse(fs.readFileSync("./package.json"));
+const packageJSON = JSON.parse(fs.readFileSync('./package.json'));
 
 function defaultTask(cb) {
+  del('./public/index.html');
   gulp
-    .src("./src/assets/dockicon.svg")
+    .src('./src/assets/dockicon.svg')
     .pipe(
       favicons({
         appName: packageJSON.name,
@@ -14,21 +17,37 @@ function defaultTask(cb) {
         appDescription: packageJSON.description,
         developerName: packageJSON.author.name,
         developerURL: packageJSON.author.url,
-        background: "#020307",
-        path: "favicons/",
+        version: packageJSON.version,
+        background: '#020307',
+        path: 'favicons/',
         url: packageJSON.homepage,
-        display: "standalone",
-        orientation: "portrait",
-        scope: "/",
-        start_url: "/?homescreen=1",
-        version: 1.0,
-        logging: false,
-        html: "index.html",
+        display: 'standalone',
+        orientation: 'any',
+        scope: '/',
+        start_url: '/index.html',
+        logging: true,
+        html: 'favicon.html',
         pipeHTML: true,
-        replace: true
-      })
-    ).on('error', (err) => { console.error('ERROR', err) })
-    .pipe(gulp.dest("./dest"));
-    cb();
+        replace: true,
+      }),
+    )
+    .on('error', (err) => {
+      console.error('ERROR', err);
+    })
+    .pipe(gulp.dest('./public'));
+
+  gulp
+    .src('./src/assets/index.html')
+    .pipe(
+      inject(gulp.src(['./public/favicon.html']), {
+        starttag: '<!-- inject:head:{{ext}} -->',
+        transform(filePath, file) {
+          return file.contents.toString('utf8'); // return file contents as string
+        },
+      }),
+    )
+    .pipe(gulp.dest('./public'));
+  cb();
 }
-exports.default = defaultTask
+
+exports.default = defaultTask;

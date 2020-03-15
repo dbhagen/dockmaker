@@ -62,14 +62,15 @@
 </template>
 
 <script>
-import draggable from "vuedraggable";
-import rawDisplayer from "./raw-displayer";
+import draggable from 'vuedraggable';
+
+import rawDisplayer from './raw-displayer.vue';
 
 export default {
-  name: "Blocks",
+  name: 'Blocks',
   components: {
     draggable,
-    rawDisplayer
+    rawDisplayer,
   },
   data() {
     return {
@@ -79,28 +80,28 @@ export default {
         y: null,
       },
       list1: [
-        { name: "John", id: 1 },
-        { name: "Joao", id: 2 },
-        { name: "Jean", id: 3 },
-        { name: "Gerard", id: 4 },
-        { name: "John2", id: 8 },
-        { name: "Joao3", id: 9 },
-        { name: "Jean4", id: 10 },
-        { name: "Gerard5", id: 11 },
-        { name: "John6", id: 12 },
-        { name: "Joao7", id: 13 },
-        { name: "Jean8", id: 14 },
-        { name: "Gerard9", id: 15 }
+        { name: 'John', id: 1 },
+        { name: 'Joao', id: 2 },
+        { name: 'Jean', id: 3 },
+        { name: 'Gerard', id: 4 },
+        { name: 'John2', id: 8 },
+        { name: 'Joao3', id: 9 },
+        { name: 'Jean4', id: 10 },
+        { name: 'Gerard5', id: 11 },
+        { name: 'John6', id: 12 },
+        { name: 'Joao7', id: 13 },
+        { name: 'Jean8', id: 14 },
+        { name: 'Gerard9', id: 15 },
       ],
       list2: [
-        { name: "Juan", id: 5 },
-        { name: "Edgard", id: 6 },
-        { name: "Johnson", id: 7 }
-      ]
+        { name: 'Juan', id: 5 },
+        { name: 'Edgard', id: 6 },
+        { name: 'Johnson', id: 7 },
+      ],
     };
   },
   created() {
-    this.logger = new this.$Amplify.Logger("BLOCKS_component");
+    this.logger = new this.$Amplify.Logger('BLOCKS_component');
   },
   deactivated() {
     // Set scroll position before deactivation for return
@@ -111,8 +112,8 @@ export default {
   methods: {
     log(msg) {
       this.logger.info(msg);
-    }
-  }
+    },
+  },
 };
 </script>
 

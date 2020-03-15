@@ -1,21 +1,30 @@
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.plugin('VuetifyLoaderPlugin').tap(() => [{
-      match (originalTag, { kebabTag, camelTag }) {
+      match(originalTag, { kebabTag, camelTag }) {
         if (kebabTag.startsWith('core-')) {
-          return [camelTag, `import ${camelTag} from '@/components/core/${camelTag.substring(4)}.vue'`]
+          return [camelTag, `import ${camelTag} from '@/components/core/${camelTag.substring(4)}.vue'`];
         }
-      }
-    }])
+        return null;
+      },
+    }]);
+    config.resolve.alias
+      .set('@', resolve('src'));
   },
-  "transpileDependencies": [
-    "vuetify"
+  transpileDependencies: [
+    'vuetify',
   ],
 
   assetsDir: 'static',
 
   css: {
-    sourceMap: true
+    sourceMap: true,
   },
 
   pluginOptions: {
@@ -23,7 +32,7 @@ module.exports = {
       locale: 'en',
       fallbackLocale: 'en',
       localeDir: 'locales',
-      enableInSFC: true
-    }
-  }
-}
+      enableInSFC: true,
+    },
+  },
+};
