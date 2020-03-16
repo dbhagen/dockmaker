@@ -26,7 +26,10 @@
         </v-btn>
         <div v-if="selectedProject">
           <v-icon>mdi-menu-right</v-icon>
-          <v-btn text>
+          <v-btn
+            to="/github"
+            text
+          >
             {{ selectedProject }}
           </v-btn>
         </div>
@@ -69,6 +72,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
+          v-if="false"
           link
           to="/projects"
         >
@@ -187,10 +191,8 @@ export default {
     };
   },
   computed: mapState({
-    user() {
-      return AmplifyStore.state.user;
-    },
-    project: 'project',
+    user: () => AmplifyStore.state.user,
+    project: () => AmplifyStore.state.project.githubString,
   }),
   created() {
     this.logger = new this.$Amplify.Logger('APP_component');
@@ -198,6 +200,10 @@ export default {
     AmplifyEventBus.$on('authState', (info) => {
       this.logger.info(`Here is the auth event that was just emitted by an Amplify component: ${info}`);
     });
+    AmplifyEventBus.$on('projectUpdate', () => {
+      this.selectedProject = this.project;
+    });
+    this.selectedProject = this.project;
   },
   methods: {
     blockDrawerChanged(evt) {

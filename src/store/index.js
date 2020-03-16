@@ -13,6 +13,8 @@ export default new Vuex.Store({
   plugins: [createPersistedState()],
   state: {
     user: null,
+    project: { name: null, githubString: null, dockerfile: null },
+    githubApiKey: null,
     organizationSelected: null,
     repositorySelected: null,
     branchSelected: null,
@@ -20,6 +22,20 @@ export default new Vuex.Store({
   mutations: {
     setUser(state, user) {
       state.user = user;
+    },
+    setGithubApiKey(state, apikey) {
+      state.githubApiKey = apikey;
+    },
+    setProject(state, { name, githubString, dockerfile }) {
+      if (name) {
+        state.project.name = name;
+      }
+      if (githubString) {
+        state.project.githubString = githubString;
+      }
+      if (dockerfile) {
+        state.project.dockerfile = dockerfile;
+      }
     },
     setOrganizationSelected(state, organization) {
       state.organizationSelected = organization;
@@ -32,12 +48,26 @@ export default new Vuex.Store({
     },
     clearAll(state) {
       state.user = null;
+      state.githubApiKey = null;
       state.organizationSelected = null;
       state.repositorySelected = null;
       state.branchSelected = null;
     },
   },
   actions: {
+    setUser({ commit }, user) {
+      if (user) {
+        commit('setUser', user);
+      } else {
+        commit('clearAll');
+      }
+    },
+    setGithubApiKey({ commit }, apikey) {
+      commit('setGithubApiKey', apikey);
+    },
+    setProject({ commit }, { name, githubString, dockerfile }) {
+      commit('setProject', { name, githubString, dockerfile });
+    },
     setOrganizationSelected({ commit }, organization) {
       commit('setOrganizationSelected', organization);
     },
@@ -46,13 +76,6 @@ export default new Vuex.Store({
     },
     setBranchSelected({ commit }, branch) {
       commit('setBranchSelected', branch);
-    },
-    setUser({ commit }, user) {
-      if (user) {
-        commit('setUser', user);
-      } else {
-        commit('clearAll');
-      }
     },
   },
   modules: {

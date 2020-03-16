@@ -17,7 +17,7 @@
 <script>
 import { AmplifyEventBus } from 'aws-amplify-vue';
 
-import AmplifyStore from '../store/index';
+import AmplifyStore from '@/store';
 
 export default {
   name: 'Auth',

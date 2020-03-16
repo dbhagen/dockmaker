@@ -1,7 +1,9 @@
 import Amplify, * as AmplifyModules from 'aws-amplify';
 import { AmplifyPlugin } from 'aws-amplify-vue';
+import axios from 'axios';
 import PortalVue from 'portal-vue';
 import Vue from 'vue';
+import VueAxios from 'vue-axios';
 
 import App from './App.vue';
 import awsconfig from './aws-exports-modifications';
@@ -9,6 +11,8 @@ import i18n from './i18n';
 import vuetify from './plugins/vuetify';
 import router from './router';
 import store from './store';
+
+Vue.use(VueAxios, axios);
 
 const mainLogger = new Amplify.Logger('MAIN_script');
 
