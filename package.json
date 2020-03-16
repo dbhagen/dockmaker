@@ -16,6 +16,7 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "post-commit": "[[ ! -z \"${EXPORT_KEY}\" ]] && [ -f .commit ] && rm -f .commit src/aws-exports.js.gpg && echo $EXPORT_KEY | gpg --batch --yes --passphrase-fd 0 -c src/aws-exports.js && git add src/aws-exports.js.gpg && git commit --amend -C HEAD --no-verify",
     "pre-commit": "touch .commit",
+    "post-merge": "[[ ! -z \"${EXPORT_KEY\" ]] && echo \"$EXPORT_KEY\" | gpg --batch -d --passphrase-fd 0 --yes src/aws-exports.js.gpg > src/aws-exports.js",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
     "styleguide": "vue-cli-service styleguidist",
