@@ -1,14 +1,21 @@
 {
     "eslint.enable": true,
+    "eslint.runtime": "/Users/dhagen/.nvm/versions/node/v13.8.0/bin/node",
     "cSpell.words": [
+        "atrule",
+        "autohotkey",
+        "bitstream",
         "dockicon",
+        "endinject",
         "in",
         "multiline",
+        "multipane",
         "octonode",
         "parens",
         "singleline",
         "space",
         "styleguidist",
-        "vuedraggable"
+        "vuedraggable",
+        "vuescroll"
     ]
 }

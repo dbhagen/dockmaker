@@ -1,8 +1,8 @@
 <template>
-  <div :class="$style.codewindow + ' pa-2 ma-2'">
-    <h3>{{ title }}</h3>
-    <pre>{{ valueString }}</pre>
-  </div>
+  <v-card class="grey pa-2 ma-2">
+    <v-card-title>{{ title }}</v-card-title>
+    <pre class="$style.pre">{{ valueString }}</pre>
+  </v-card>
 </template>
 <script>
 const props = {
@@ -25,10 +25,7 @@ export default {
 };
 </script>
 <style module>
-pre {
+.pre {
   text-align: start;
-}
-.codewindow {
-  background-color: #DDD;
 }
 </style>

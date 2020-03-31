@@ -1,4 +1,5 @@
 const path = require('path');
+const MonacoEditorPlugin = require('monaco-editor-webpack-plugin');
 
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -14,6 +15,7 @@ module.exports = {
         return null;
       },
     }]);
+    config.plugin('MonacoEditor').use(MonacoEditorPlugin, [() => ['javascript', 'css', 'html', 'typescript']]);
     config.resolve.alias
       .set('@', resolve('src'));
   },

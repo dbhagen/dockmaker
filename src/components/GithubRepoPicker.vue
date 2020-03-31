@@ -108,6 +108,7 @@ export default {
     organizationSelectedState: (state) => state.organizationSelected,
     repositorySelectedState: (state) => state.repositorySelected,
     branchSelectedState: (state) => state.branchSelected,
+    dockerfileState: (state) => state.dockerfile,
   }),
   watch: {
     organizationSelected(newVal) {
@@ -151,7 +152,7 @@ export default {
     });
   },
   methods: {
-    ...mapActions(['setOrganizationSelected', 'setRepositorySelected', 'setBranchSelected', 'setProject']),
+    ...mapActions(['setOrganizationSelected', 'setRepositorySelected', 'setBranchSelected', 'setProject', 'setDockerfile']),
     async getOrganizations() {
       const ghme = this.githubClient.me();
 
@@ -219,6 +220,7 @@ export default {
           const dockerfileReturned = data[0];
           const dockerFileContent = atob(dockerfileReturned.content);
           this.setProject({ dockerfile: 'Dockerfile' });
+          this.setDockerfile(dockerFileContent);
         })
         .error((err) => {
           if (err.statusCode === 404) {

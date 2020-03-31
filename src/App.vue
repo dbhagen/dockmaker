@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :dark="setTheme">
     <v-app-bar
       app
       dense
@@ -14,7 +14,13 @@
           class="headline font-weight-bold"
           text
         >
-          <v-img
+          <dock-icon
+            alt="Dockmaker Logo"
+            class="shrink mr-2"
+            style="max-width: 36px; max-height: 36px;"
+          />
+          <v-icon>$vuetify.icons.dockmaker</v-icon>
+          <!-- <v-img
             alt="Dockmaker Logo"
             class="shrink mr-2"
             contain
@@ -22,7 +28,8 @@
             transition="scale-transition"
             max-height="36"
             max-width="36"
-          />Dockmaker
+          /> -->
+          Dockmaker
         </v-btn>
         <div v-if="selectedProject">
           <v-icon>mdi-menu-right</v-icon>
@@ -39,12 +46,14 @@
 
       <v-btn
         v-if="!user"
+        color="accent"
         to="/auth"
       >
         Login
       </v-btn>
       <v-btn
         v-if="user"
+        color="accent"
         to="/auth/signout"
       >
         Logout
@@ -159,25 +168,63 @@
     <v-content>
       <router-view />
     </v-content>
+    <v-footer
+      app
+      fixed
+      class="grey px-2 caption font-weight-medium d-flex flex-row-reverse"
+    >
+      <div
+        class="px-0 py-0 mx-2 text-right"
+      >
+        © 2019-{{ new Date().getFullYear() }},
+        <strong>Strong Oak Studios</strong>
+      </div>
+      <div
+        class="px-0 py-n1 ma-0"
+      >
+        <v-btn
+          :class="$style.themebutton + ' py-0 px-0'"
+          x-small
+          icon
+          @click="changeTheme"
+        >
+          <v-icon>
+            mdi-theme-light-dark
+          </v-icon>
+        </v-btn>
+        <!-- <v-switch
+            v-model="$vuetify.theme.dark"
+            v-col
+            :class="$style.themebutton"
+            hide-details
+            inset
+          /> -->
+      </div>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import { AmplifyEventBus, components } from 'aws-amplify-vue';
-import { mapState } from 'vuex';
-
-import AmplifyStore from './store/index';
 // import { AmplifyEventBus } from 'aws-amplify-vue';
+import '@/assets/main.css';
+
+import { AmplifyEventBus, components } from 'aws-amplify-vue';
+import { mapActions, mapState } from 'vuex';
+
+import DockIcon from '@/components/DockIcon.vue';
+import AmplifyStore from '@/store/index';
 
 export default {
   name: 'App',
 
   components: {
     ...components,
+    DockIcon,
   },
 
   data() {
     return {
+      darkTheme: null,
       drawer: true,
       drawerMini: true,
       drawerMiniHover: false,
@@ -193,6 +240,16 @@ export default {
   computed: mapState({
     user: () => AmplifyStore.state.user,
     project: () => AmplifyStore.state.project.githubString,
+    storedTheme: () => AmplifyStore.state.theme,
+    setTheme() {
+      if (this.darkTheme === null) {
+        this.darkTheme = this.storedTheme;
+      }
+      if (this.darkTheme === true) {
+          return (this.$vuetify.theme.dark = true); // eslint-disable-line
+      }
+        return (this.$vuetify.theme.dark = false); // eslint-disable-line
+    },
   }),
   created() {
     this.logger = new this.$Amplify.Logger('APP_component');
@@ -204,8 +261,14 @@ export default {
       this.selectedProject = this.project;
     });
     this.selectedProject = this.project;
+    this.darkTheme = this.storedTheme;
   },
   methods: {
+    ...mapActions(['setStoredTheme']),
+    changeTheme() {
+      this.darkTheme = !this.darkTheme;
+      this.setStoredTheme(this.darkTheme);
+    },
     blockDrawerChanged(evt) {
       this.blockDrawer = evt;
     },
@@ -220,6 +283,10 @@ export default {
 </script>
 
 <style module>
+.themebutton {
+  max-width: 18px;
+  max-height: 18px;
+}
 .shade {
   position: absolute;
   bottom: 0;

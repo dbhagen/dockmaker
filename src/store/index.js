@@ -13,7 +13,9 @@ export default new Vuex.Store({
   plugins: [createPersistedState()],
   state: {
     user: null,
+    theme: false,
     project: { name: null, githubString: null, dockerfile: null },
+    dockerfile: null,
     githubApiKey: null,
     organizationSelected: null,
     repositorySelected: null,
@@ -22,6 +24,9 @@ export default new Vuex.Store({
   mutations: {
     setUser(state, user) {
       state.user = user;
+    },
+    setTheme(state, theme) {
+      state.theme = theme;
     },
     setGithubApiKey(state, apikey) {
       state.githubApiKey = apikey;
@@ -36,6 +41,9 @@ export default new Vuex.Store({
       if (dockerfile) {
         state.project.dockerfile = dockerfile;
       }
+    },
+    setDockerfile(state, dockerfileContent) {
+      state.dockerfile = dockerfileContent;
     },
     setOrganizationSelected(state, organization) {
       state.organizationSelected = organization;
@@ -62,11 +70,17 @@ export default new Vuex.Store({
         commit('clearAll');
       }
     },
+    setStoredTheme({ commit }, theme) {
+      commit('setTheme', theme);
+    },
     setGithubApiKey({ commit }, apikey) {
       commit('setGithubApiKey', apikey);
     },
     setProject({ commit }, { name, githubString, dockerfile }) {
       commit('setProject', { name, githubString, dockerfile });
+    },
+    setDockerfile({ commit }, dockerfileContent) {
+      commit('setDockerfile', dockerfileContent);
     },
     setOrganizationSelected({ commit }, organization) {
       commit('setOrganizationSelected', organization);
