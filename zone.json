@@ -1,0 +1,2092 @@
+"changeBatch": {
+"changes": [
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "360.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-885.awsdns-46.net."
+},
+{
+"value": "ns-333.awsdns-41.com."
+},
+{
+"value": "ns-1747.awsdns-26.co.uk."
+},
+{
+"value": "ns-1116.awsdns-11.org."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "6qspwn4svkdi.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gv-twujagntmdggiv.dv.googlehosted.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_3cdb08a4f13426b0b1db70183287bcc3.gg3-assets-stage.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "_f4d663e57883dd7e9f0ebdb5aa1f0de7.acm-validations.aws."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_6a4cf31d5a441c01f4e46cf998b6b952.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "_e8eb5e78da174488970c70e3d0d69bf2.acm-validations.aws."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_a765d19c65c7e4ab4e33a05ce6d46da5.gg3-assets.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "_6d5951863705a31fc7c057c2be1c1b12.acm-validations.aws."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_acme-challenge.p4.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"3zsbI6gkYnRo0kH-Wd0sY3GIPElv-4_1So9kj3R3CZc\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_acme-challenge.vsphere.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"qJT7Xhvh6rsYnlPt8MvJwsk3Q-LVQzOv0_NW7PP2aJg\""
+},
+{
+"value": "\"Ld8Q0CkC4mKo139fmZX2GZTFXygB9mRyM3VYFgbx8hk\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "_dmarc.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "aspyr.com.hosted.dmarc-report.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "achillingfeeling-stage.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "fahrenheit-stage.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "api.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.88"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.aspyr-www-prod-lb-1768369079.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "aspyr.com.",
+"type": "MX",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "1 ASPMX.L.GOOGLE.COM"
+},
+{
+"value": "5 ALT1.ASPMX.L.GOOGLE.COM"
+},
+{
+"value": "5 ALT2.ASPMX.L.GOOGLE.COM"
+},
+{
+"value": "10 ALT3.ASPMX.L.GOOGLE.COM"
+},
+{
+"value": "10 ALT4.ASPMX.L.GOOGLE.COM"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"atlassian-domain-verification=BmkTcUuUr+r/8agTYO/AlrffBLN27TvkEqO6swmsYqRjZYyb26T+VmSSE2eYYu4T\""
+},
+{
+"value": "\"MS=042B223D03940769378A2C15843FB34528AAF519\""
+},
+{
+"value": "\"v=spf1 ip4:64.28.108.0/24 ip4:192.207.27.0/24 ip4:74.203.190.0/24 ip4:71.78.16.210/28 include:support.zendesk.com include:mail.zendesk.com\""
+},
+{
+"value": "\"include:servers.mcsv.net\""
+},
+{
+"value": "\"include:spf.mandrillapp.com include:_spf.google.com ~all\""
+},
+{
+"value": "\"google-site-verification=FCmzQMaFiSYH5hFKzFJZMkv8zFYQ_SSR39j6Jlib0dM\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "aspyr.com.",
+"type": "CAA",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "0 issuewild \"digicert.com\""
+},
+{
+"value": "0 issue \"digicert.com\""
+},
+{
+"value": "0 issue \"letsencrypt.org\""
+},
+{
+"value": "0 issue \"awstrust.com\""
+},
+{
+"value": "0 issuewild \"awstrust.com\""
+},
+{
+"value": "0 iodef \"mailto:hostmaster@aspyr.com\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "assets.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "assets.aspyr.com.s3.amazonaws.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "auth.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "aspyrmedia-cd-n1seufvgx2ikfgzn.edge.tenants.auth0.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "authtest.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1462.awsdns-54.org."
+},
+{
+"value": "ns-721.awsdns-26.net."
+},
+{
+"value": "ns-1809.awsdns-34.co.uk."
+},
+{
+"value": "ns-211.awsdns-26.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "aws.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1155.awsdns-16.org."
+},
+{
+"value": "ns-318.awsdns-39.com."
+},
+{
+"value": "ns-1773.awsdns-29.co.uk."
+},
+{
+"value": "ns-887.awsdns-46.net."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "beta.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-30.awsdns-03.com."
+},
+{
+"value": "ns-754.awsdns-30.net."
+},
+{
+"value": "ns-1615.awsdns-09.co.uk."
+},
+{
+"value": "ns-1386.awsdns-45.org."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "bl2.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "18.237.106.34"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "bl25.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.90"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "blog.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.aspyr-www-prod-lb-1768369079.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "calendar.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ghs.googlehosted.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "chefops.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "chefasprycom-uuybenw3nboyqo2w.us-west-2.opsworks-cm.io"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "civ5mac.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "civ5macapp.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "civ6.lobby.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "54.69.90.122"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "community.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "confluence.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.213"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ctep.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.ctep-production-lb-1792109926.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "cuda.aspyr.com.",
+"type": "A",
+"tTL": 320,
+"resourceRecords": [
+{
+"value": "192.207.27.80"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "data.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.93"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "dukenukem.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "eauth.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "soa-proxy.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "eauthstage.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-360.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ec2.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1990.awsdns-56.co.uk."
+},
+{
+"value": "ns-1030.awsdns-00.org."
+},
+{
+"value": "ns-129.awsdns-16.com."
+},
+{
+"value": "ns-824.awsdns-39.net."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "eks.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1308.awsdns-35.org."
+},
+{
+"value": "ns-1893.awsdns-44.co.uk."
+},
+{
+"value": "ns-874.awsdns-45.net."
+},
+{
+"value": "ns-264.awsdns-33.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "elb-west.ec2.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.elb-west-991912084.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "email.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ghs.googlehosted.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "employee-auth.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "af258642c83d511e8a3c60afc1d72b15-1664199152.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "enterpriseenrollment.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "EnterpriseEnrollment-s.manage.microsoft.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "enterpriseregistration.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "EnterpriseRegistration.windows.net"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "external.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1937.awsdns-50.co.uk."
+},
+{
+"value": "ns-1190.awsdns-20.org."
+},
+{
+"value": "ns-953.awsdns-55.net."
+},
+{
+"value": "ns-347.awsdns-43.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "fb-sushi.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "sushimushigame.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "files.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "s3.amazonaws.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "firaxisp4.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.218"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "firewall.ctx.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "108.246.235.1"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "firewall.onr.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.87"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "forums.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.106"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ftps.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.53"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "fx.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.95"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "fxs.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.220"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gadata.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.96"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gameguide.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gg2-proxy.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gameguide2.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gg2-proxy.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gameguide3.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.crescendo-production-lb-1772294057.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gameguidetest.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gg2-proxy.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gamejam-p4.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.216"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gameupdate.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "192.207.27.113"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gapps.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-1443.awsdns-52.org."
+},
+{
+"value": "ns-1949.awsdns-51.co.uk."
+},
+{
+"value": "ns-441.awsdns-55.com."
+},
+{
+"value": "ns-650.awsdns-17.net."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gappverify.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"google-site-verification=b5XBr-b2LN8Lb1wEK-rhys-DTse5aYQ6Lc5whnvLcF0\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg-directory.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "dq6klpkuwxn0g.cloudfront.net"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gameguide.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg2-proxy.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.115"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg3-assets-stage.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z2FDTNDATAQYW2",
+"dNSName": "d27enm9noyq5nt.cloudfront.net.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg3-assets.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z2FDTNDATAQYW2",
+"dNSName": "dmi75pmjksel0.cloudfront.net.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg3-preview.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-360.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg3-proxy.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.104"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gg3-stage.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-360.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "gitlab.aspyr.com.",
+"type": "A",
+"tTL": 60,
+"resourceRecords": [
+{
+"value": "34.222.4.33"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "google._domainkey.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkOWFIKEbyLh9KrW68HNtn+UWxXQlVcZEqfzuAra8uAuBDpN5B/v64bBzCV5fua92yDTxQpa8upnhg6hJyrlb/9hjJ3daLBUQ+eatd23c10CpVDeDJlFi5P6UaKLn2WwbtUbd5RDi40n+rXcrpuJjFpm4DUv0ZWegnReGxb9qAawIDAQAB\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "helpme.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.106"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "innerspace.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ipgs.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.100"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ipgslb.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.115"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "jira-test-upgrade.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "jira-test-upgrade-lb-1730107306.us-west-2.elb.amazonaws.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "jira.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.212"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "k1._domainkey.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "dkim.mcsv.net."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "keycloak.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.116"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "kotor.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.106"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "kotor.aspyr.com.",
+"type": "TXT",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "\"blitz=mu-9d7ee876-877a01a9-49280d14-ee9e5927\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "layersoffear.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.111"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "legacyexchange.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.110"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "localhost.aspyr.com.",
+"type": "A",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "127.0.0.1"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "macstadium.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-837.awsdns-40.net."
+},
+{
+"value": "ns-5.awsdns-00.com."
+},
+{
+"value": "ns-1689.awsdns-19.co.uk."
+},
+{
+"value": "ns-1402.awsdns-47.org."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "mail.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"v=spf1 ip4:64.28.108.0/24 ip4:192.207.27.0/24 ip4:74.203.190.0/24 include:_spf.google.com ~all\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "mandrill._domainkey.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "marketing.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "s3.amazonaws.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "mw3.lobby.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.114"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "newsletter.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "echo7.bluehornet.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ns1.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-38.awsdns-04.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "nuh-mixer-assets.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z2FDTNDATAQYW2",
+"dNSName": "d1cl0ozxkbyl32.cloudfront.net.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "observer.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.111"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "onr.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-318.awsdns-39.com."
+},
+{
+"value": "ns-1206.awsdns-22.org."
+},
+{
+"value": "ns-991.awsdns-59.net."
+},
+{
+"value": "ns-1580.awsdns-05.co.uk."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "opsworks.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "chefasprycom-uuybenw3nboyqo2w.us-west-2.opsworks-cm.io."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "p4-disbelief.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.218"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "p4-external.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.218"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "p4-zebullagames.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.218"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "paldata.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.102"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "paldatatest.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.39"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "partners.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "influencer.xsolla.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "password.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-360.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "pokerpals.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "www.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "press.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.aspyr-www-prod-lb-1768369079.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "prolog-admin.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.admando-production-lb-1100192327.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "prolog.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.crescendo-production-lb-1772294057.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "push.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.103"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "pw.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.101"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "pwstage.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.38"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "qags01.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.48"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "register.aspyr.com.",
+"type": "CNAME",
+"tTL": 7200,
+"resourceRecords": [
+{
+"value": "echo7.bluehornet.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "registration.aspyr.com.",
+"type": "CNAME",
+"tTL": 7200,
+"resourceRecords": [
+{
+"value": "echo7.bluehornet.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "s3-assets.aspyr.com.",
+"type": "CNAME",
+"aliasTarget": {
+"hostedZoneId": "Z2FVB9O9D2X4RZ",
+"dNSName": "assets.aspyr.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "s3.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "s3-us-west-2.amazonaws.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "smtp.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.113"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "soa-news.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "soa-proxy.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "soa-presence-stage.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.90"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "soa-proxy.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.108"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "soa-stage.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.58"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "soa-stage.aspyr.com.",
+"type": "TXT",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "\"blitz=mu-9d7ee876-877a01a9-49280d14-ee9e5927\""
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "ssltest.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.106"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "sslvpn-backup.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.15.216"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "sslvpn-backup.aspyr.com.",
+"type": "AAAA",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "2605:6000:0:8::f:5297"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "sslvpn.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.215"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "staging-kms.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.kms-staging-lb-869975063.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "staging-prolog-admin.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.admando-staging-lb-1464619906.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "staging-prolog.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.crescendo-staging-lb-1911292491.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "staging-sales.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.impresario-staging-lb-419136629.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "stagingassets.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "s3.amazonaws.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "station.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-360.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "status.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "lvwvp41jlj4x.stspg-customer.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "support.aspyr.com.",
+"type": "CNAME",
+"tTL": 7200,
+"resourceRecords": [
+{
+"value": "aspyrsupport.zendesk.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "sushispstage.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "74.203.190.57"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "switcher.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "64.28.108.111"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "us-south-1-gg3-stage.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "gg3-stage.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "vpn.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.219"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "w2.aspyr.com.",
+"type": "NS",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "ns-423.awsdns-52.com."
+},
+{
+"value": "ns-534.awsdns-02.net."
+},
+{
+"value": "ns-1160.awsdns-17.org."
+},
+{
+"value": "ns-1562.awsdns-03.co.uk."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "web-proxy-360.aspyr.com.",
+"type": "A",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "71.78.16.214"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "web-proxy-ec2.aspyr.com.",
+"type": "A",
+"tTL": 30,
+"resourceRecords": [
+{
+"value": "54.69.90.122"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "web-proxy-onr.aspyr.com.",
+"type": "A",
+"tTL": 30,
+"resourceRecords": [
+{
+"value": "64.28.108.106"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "web-proxy.ec2.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "web-proxy-ec2.aspyr.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "www-stage.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.aspyr-www-staging-lb-1164748305.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "www.aspyr.com.",
+"type": "A",
+"aliasTarget": {
+"hostedZoneId": "Z1H1FL5HABSF5",
+"dNSName": "dualstack.aspyr-www-prod-lb-1768369079.us-west-2.elb.amazonaws.com.",
+"evaluateTargetHealth": false
+}
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "xmpp-client.tcp.aspyr.com.",
+"type": "SRV",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "0 0 5222 jab.aspyr.com."
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk1._domainkey.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "zendesk1._domainkey.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk1.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "mail1.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk2._domainkey.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "zendesk2._domainkey.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk2.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "mail2.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk3.aspyr.com.",
+"type": "CNAME",
+"tTL": 3600,
+"resourceRecords": [
+{
+"value": "mail3.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendesk4.aspyr.com.",
+"type": "CNAME",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "mail4.zendesk.com"
+}
+]
+}
+},
+{
+"action": "DELETE",
+"resourceRecordSet": {
+"name": "zendeskverification.aspyr.com.",
+"type": "TXT",
+"tTL": 300,
+"resourceRecords": [
+{
+"value": "\"e7f2058ed92257b2\""
+}
+]
+}
+}
+]
+}
